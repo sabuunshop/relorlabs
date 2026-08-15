@@ -1,61 +1,245 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "image_banner": {
+    "image_banner_d76QH7": {
       "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Untitled_design_17.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-right",
+        "desktop_content_alignment": "right",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "multirow_QB9iQQ": {
+      "type": "multirow",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "row_6jJfQE": {
+          "type": "row",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify://shop_images/Product_Image_5.png",
+            "caption": "Anti-Snoring Mouthpiece",
+            "heading": "Engineered for Airflow. Designed for Rest.",
+            "text": "<p>The clinical-grade, custom-fit mouthpiece that gently opens your airway to silence snoring at the source. Better sleep for you, uninterrupted rest for your partner.</p>",
+            "button_label": "Shop Now",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "row_6jJfQE"
       ],
+      "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_i9EAiB": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_eBTBbR": {
+          "type": "column",
+          "settings": {
+            "title": "Medical-Grade Material",
+            "text": "<p>100% Medical-Grade, BPA-Free, non-toxic thermoplastic</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XQXTUN": {
+          "type": "column",
+          "settings": {
+            "title": "Orthodonist Inspired Design",
+            "text": "<p>RelorGuard is rooted in orthodontist-inspired design. Rather than forcing the jaw into a rigid, unnatural position, the appliance leverages biomechanical principles to gently advance the mandible while respecting your natural dental alignment.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cjTFem": {
+          "type": "column",
+          "settings": {
+            "title": "Custom Fit",
+            "text": "<p>RelorGuard uses advanced thermal-moldable technology to adapt seamlessly to your unique bite. Through a simple boil-and-bite process, it creates a secure, slip-free impression that stays in place all night.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_eBTBbR",
+        "column_XQXTUN",
+        "column_cjTFem"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "The Relor Labs Standard",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_cQLKHW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JrjTNt": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Science of Silence.",
+            "heading_size": "h1"
+          }
+        },
+        "text_akgDkG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Snoring occurs when the muscles in your neck relax, causing your airway to narrow and vibrate. The RelorGuard utilizes Mandibular Advancement—a proven technique that gently holds your lower jaw slightly forward. This widens the airway, stops the vibration, and allows oxygen to flow freely.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JrjTNt",
+        "text_akgDkG"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/hf_20260815_115139_d81ccb07-fd97-444c-a21b-3dbac95c65ce.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
         "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_re7CYC": {
+      "type": "featured-product",
+      "blocks": {
+        "text_4fcdbA": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_YnFYBa": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_cPaBUj": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_qfQxFk": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_pmh3TC": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_xU73CU": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_qPjFgi": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_4fcdbA",
+        "title_YnFYBa",
+        "price_cPaBUj",
+        "variant_picker_qfQxFk",
+        "quantity_selector_pmh3TC",
+        "buy_buttons_xU73CU",
+        "share_qPjFgi"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "Shop Our Best Sellers",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -63,13 +247,18 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "image_banner",
+    "image_banner_d76QH7",
+    "multirow_QB9iQQ",
+    "multicolumn_i9EAiB",
+    "image_with_text_cQLKHW",
+    "featured_product_re7CYC",
     "featured_collection"
   ]
 }
