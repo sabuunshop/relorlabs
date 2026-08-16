@@ -160,7 +160,7 @@
         "heading_FMXyUk": {
           "type": "heading",
           "settings": {
-            "heading": "Jaw Support",
+            "heading": "<strong>Jaw Support</strong>",
             "heading_size": "h1"
           }
         },
@@ -187,7 +187,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Product_Image_8.png",
+        "image": "shopify://shop_images/Product_Image_11.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -208,7 +208,7 @@
         "heading_jkVmKn": {
           "type": "heading",
           "settings": {
-            "heading": "Airway Expansion",
+            "heading": "<strong>Airway Expansion</strong>",
             "heading_size": "h1"
           }
         },
@@ -250,11 +250,106 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_ErCn4m": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Tdhmyz": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Tongue Stabilization</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Ah3HWY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_gYaY8n": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Tdhmyz",
+        "text_Ah3HWY",
+        "button_gYaY8n"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Product_Image_9.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_KhFa7A": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_cwefBM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_NtKFb3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_U6AXQt": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cwefBM",
+        "text_NtKFb3",
+        "button_U6AXQt"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner_4AnYhY": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Banners_Images.png",
+        "image": "shopify://shop_images/Banners_Images_1.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -267,78 +362,35 @@
         "show_text_below": true
       }
     },
-    "multicolumn_4GUXwp": {
-      "type": "multicolumn",
+    "rich_text_tEB9gA": {
+      "type": "rich-text",
       "blocks": {
-        "column_m6wDCf": {
-          "type": "column",
+        "heading_c9w9gb": {
+          "type": "heading",
           "settings": {
-            "title": "Jaw Support",
-            "text": "<p>Relor Guard’s jaw support is the core of how the device stops snoring — and it works through a precise, clinically proven mechanism called Mandibular Advancement.</p>",
-            "link_label": "",
-            "link": ""
+            "heading": "<strong>2,600+ Verified Reviews</strong>",
+            "heading_size": "h1"
           }
         },
-        "column_mcyhCV": {
-          "type": "column",
+        "text_enDnKV": {
+          "type": "text",
           "settings": {
-            "title": "Airway Expansion",
-            "text": "<p>Relor Guard opens the throat for quiet, effortless breathing. When the lower jaw is gently moved forward, the tongue shifts with it, creating a wider, clearer passage for air to flow. </p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_waY93y": {
-          "type": "column",
-          "settings": {
-            "title": "Tongue Stabilization",
-            "text": "<p>Relor Guard gently moves the lower jaw forward, which brings the tongue forward with it and keeps it stable instead of collapsing backward. This supported position keeps the airway open, allows smooth airflow, eliminates vibration, and makes breathing quiet and effortless.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_PQekcD": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_XDABdr": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         }
       },
       "block_order": [
-        "column_m6wDCf",
-        "column_mcyhCV",
-        "column_waY93y",
-        "column_PQekcD",
-        "column_XDABdr"
+        "heading_c9w9gb",
+        "text_enDnKV"
       ],
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "title": "🔬 How Relor Guard Works",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "Button label",
-        "button_link": "",
-        "columns_desktop": 5,
-        "column_alignment": "left",
-        "background_style": "primary",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "collapsible_content_UW4Ljd": {
@@ -439,8 +491,10 @@
     "rich_text_Mb4MNR",
     "image_with_text_iY7VDm",
     "image_with_text_J7pL8M",
+    "image_with_text_ErCn4m",
+    "image_with_text_KhFa7A",
     "image_banner_4AnYhY",
-    "multicolumn_4GUXwp",
+    "rich_text_tEB9gA",
     "collapsible_content_UW4Ljd",
     "disclosures",
     "related-products"
