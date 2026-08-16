@@ -53,10 +53,10 @@
         "text_style": "body",
         "button_style": "primary",
         "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-row-blue-button",
-        "row_color_scheme": "",
+        "row_color_scheme": "scheme-row-blue-button",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -188,13 +188,13 @@
         "icon_with_text_3xwgg4": {
           "type": "icon-with-text",
           "settings": {
-            "layout": "horizontal",
-            "icon_1": "heart",
-            "heading_1": "Heading",
+            "layout": "vertical",
+            "icon_1": "clipboard",
+            "heading_1": "Designed by Orthodonists",
             "icon_2": "return",
-            "heading_2": "Heading",
+            "heading_2": "Try Risk-free, 30-day Returns",
             "icon_3": "truck",
-            "heading_3": "Heading"
+            "heading_3": "International Shipping"
           }
         },
         "buy_buttons_xU73CU": {
