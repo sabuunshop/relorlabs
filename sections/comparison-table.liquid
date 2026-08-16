@@ -106,6 +106,7 @@
           </tr>
         </thead>
         <tbody>
+          {%- assign competitor_keys = 'competitor_1,competitor_2,competitor_3,competitor_4' | split: ',' -%}
           {%- for block in section.blocks -%}
             <tr {{ block.shopify_attributes }}>
               <td class="comparison-table__feature">{{ block.settings.feature }}</td>
@@ -114,7 +115,7 @@
                   {{- 'icon-checkmark.svg' | inline_asset_content -}}
                 </span>
               </td>
-              {%- for competitor in 'competitor_1,competitor_2,competitor_3,competitor_4' | split: ',' -%}
+              {%- for competitor in competitor_keys -%}
                 <td>
                   {%- if block.settings[competitor] -%}
                     <span class="comparison-table__icon comparison-table__icon--yes">
