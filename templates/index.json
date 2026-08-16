@@ -36,8 +36,8 @@
             "caption": "Anti-Snoring Mouthpiece",
             "heading": "Engineered for Airflow. Designed for Rest.",
             "text": "<p>The clinical-grade, custom-fit mouthpiece that gently opens your airway to silence snoring at the source. Better sleep for you, uninterrupted rest for your partner.</p>",
-            "button_label": "Shop Now",
-            "button_link": ""
+            "button_label": "Shop RelorGuard",
+            "button_link": "shopify://products/relorguard-anti-snoring-mouthpiece"
           }
         }
       },
@@ -51,11 +51,11 @@
         "image_layout": "alternate-left",
         "heading_size": "h1",
         "text_style": "body",
-        "button_style": "secondary",
+        "button_style": "primary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_color_scheme": "",
+        "section_color_scheme": "scheme-row-blue-button",
         "row_color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36

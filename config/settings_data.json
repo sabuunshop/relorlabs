@@ -197,6 +197,17 @@
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
+      },
+      "scheme-row-blue-button": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#334fb4",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#334fb4",
+          "shadow": "#121212"
+        }
       }
     }
   },
