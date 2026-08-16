@@ -2072,7 +2072,8 @@
               "label": "Quantity"
             },
             "tier_discount": {
-              "label": "Discount"
+              "label": "Discount",
+              "info": "Display only — this must match a real discount (e.g. an automatic quantity discount) or the price shown here won't match checkout."
             },
             "tier_perks": {
               "label": "Perks (one per line)",
