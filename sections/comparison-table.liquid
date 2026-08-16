@@ -1,0 +1,322 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .comparison-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .comparison-table {
+    width: 100%;
+    min-width: 62rem;
+    border-collapse: collapse;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 1.6rem 1.4rem;
+    text-align: center;
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    vertical-align: middle;
+  }
+
+  .comparison-table thead th {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+  }
+
+  .comparison-table__feature-header,
+  .comparison-table__feature {
+    text-align: left;
+  }
+
+  .comparison-table__feature {
+    font-weight: 600;
+  }
+
+  .comparison-table__highlight {
+    background: rgba(51, 79, 180, 0.08);
+  }
+
+  th.comparison-table__highlight {
+    color: #334fb4;
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+
+  tbody tr:last-child td.comparison-table__highlight {
+    border-radius: 0 0 1.2rem 1.2rem;
+  }
+
+  .comparison-table__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+  }
+
+  .comparison-table__icon svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .comparison-table__icon--brand {
+    background: #334fb4;
+    color: #ffffff;
+  }
+
+  .comparison-table__icon--yes {
+    background: rgba(var(--color-foreground), 0.14);
+    color: rgba(var(--color-foreground), 0.65);
+  }
+
+  .comparison-table__icon--no {
+    color: rgba(var(--color-foreground), 0.35);
+  }
+{%- endstyle -%}
+
+<div class="comparison-table-section color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="comparison-table__heading rte inline-richtext title-wrapper--no-top-margin {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+
+    <div class="comparison-table-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th class="comparison-table__feature-header">{{ 'sections.comparison_table.features_label' | t }}</th>
+            <th class="comparison-table__highlight">{{ section.settings.product_name }}</th>
+            <th>{{ section.settings.competitor_1 }}</th>
+            <th>{{ section.settings.competitor_2 }}</th>
+            <th>{{ section.settings.competitor_3 }}</th>
+            <th>{{ section.settings.competitor_4 }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for block in section.blocks -%}
+            <tr {{ block.shopify_attributes }}>
+              <td class="comparison-table__feature">{{ block.settings.feature }}</td>
+              <td class="comparison-table__highlight">
+                <span class="comparison-table__icon comparison-table__icon--brand">
+                  {{- 'icon-checkmark.svg' | inline_asset_content -}}
+                </span>
+              </td>
+              {%- for competitor in 'competitor_1,competitor_2,competitor_3,competitor_4' | split: ',' -%}
+                <td>
+                  {%- if block.settings[competitor] -%}
+                    <span class="comparison-table__icon comparison-table__icon--yes">
+                      {{- 'icon-checkmark.svg' | inline_asset_content -}}
+                    </span>
+                  {%- else -%}
+                    <span class="comparison-table__icon comparison-table__icon--no">
+                      {{- 'icon-minus.svg' | inline_asset_content -}}
+                    </span>
+                  {%- endif -%}
+                </td>
+              {%- endfor -%}
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.comparison_table.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "t:sections.comparison_table.settings.heading.default",
+      "label": "t:sections.comparison_table.settings.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "text",
+      "id": "product_name",
+      "default": "RelorGuard",
+      "label": "t:sections.comparison_table.settings.product_name.label"
+    },
+    {
+      "type": "text",
+      "id": "competitor_1",
+      "default": "Nose Strips",
+      "label": "t:sections.comparison_table.settings.competitor_1.label"
+    },
+    {
+      "type": "text",
+      "id": "competitor_2",
+      "default": "Pillows",
+      "label": "t:sections.comparison_table.settings.competitor_2.label"
+    },
+    {
+      "type": "text",
+      "id": "competitor_3",
+      "default": "Nasal Sprays",
+      "label": "t:sections.comparison_table.settings.competitor_3.label"
+    },
+    {
+      "type": "text",
+      "id": "competitor_4",
+      "default": "Mouth Tape",
+      "label": "t:sections.comparison_table.settings.competitor_4.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_row",
+      "name": "t:sections.comparison_table.blocks.comparison_row.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "t:sections.comparison_table.blocks.comparison_row.settings.feature.label",
+          "default": "Feature"
+        },
+        {
+          "type": "checkbox",
+          "id": "competitor_1",
+          "label": "t:sections.comparison_table.blocks.comparison_row.settings.competitor.label",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "competitor_2",
+          "label": "t:sections.comparison_table.blocks.comparison_row.settings.competitor.label",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "competitor_3",
+          "label": "t:sections.comparison_table.blocks.comparison_row.settings.competitor.label",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "competitor_4",
+          "label": "t:sections.comparison_table.blocks.comparison_row.settings.competitor.label",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.comparison_table.presets.name",
+      "blocks": [
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Fixes the real cause of snoring"
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Keeps your airway open all night"
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Adjustable and comfortable",
+            "competitor_1": true,
+            "competitor_2": true,
+            "competitor_4": true
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Works in any sleeping position",
+            "competitor_3": true,
+            "competitor_4": true
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Stays in place all night",
+            "competitor_3": true,
+            "competitor_4": true
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Drug-free and safe to use every night",
+            "competitor_1": true,
+            "competitor_2": true
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
