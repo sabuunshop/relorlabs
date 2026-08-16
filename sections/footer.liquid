@@ -25,6 +25,26 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .footer-block__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin: 0 0 1rem;
+  }
+
+  .footer-block__contact-icon {
+    display: flex;
+    flex-shrink: 0;
+    width: 1.8rem;
+    height: 1.8rem;
+    color: rgb(var(--color-foreground));
+  }
+
+  .footer-block__contact-icon svg {
+    width: 100%;
+    height: 100%;
+  }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -82,6 +102,47 @@
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
+                  {%- when 'about' -%}
+                    <h2 class="footer-block__heading inline-richtext">About {{ shop.name }}</h2>
+                    <div class="footer-block__details-content rte">
+                      {{ block.settings.text }}
+                    </div>
+                  {%- when 'policy_list' -%}
+                    <ul class="footer-block__details-content list-unstyled">
+                      {%- for policy in shop.policies -%}
+                        {%- if policy != blank -%}
+                          <li>
+                            <a
+                              href="{{ policy.url }}"
+                              class="link link--text list-menu__item list-menu__item--link"
+                            >
+                              {{ policy.title | escape }}
+                            </a>
+                          </li>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </ul>
+                  {%- when 'contact_info' -%}
+                    {%- liquid
+                      assign contact_email = block.settings.email
+                      if contact_email == blank
+                        assign contact_email = shop.email
+                      endif
+                    -%}
+                    <div class="footer-block__details-content footer-block__contact">
+                      {%- if block.settings.phone != blank -%}
+                        <p class="footer-block__contact-item">
+                          <span class="footer-block__contact-icon">{{- 'icon-phone.svg' | inline_asset_content -}}</span>
+                          <span><strong>Phone:</strong> {{ block.settings.phone }}</span>
+                        </p>
+                      {%- endif -%}
+                      {%- if contact_email != blank -%}
+                        <p class="footer-block__contact-item">
+                          <span class="footer-block__contact-icon">{{- 'icon-mail.svg' | inline_asset_content -}}</span>
+                          <span><strong>Email:</strong> <a href="mailto:{{ contact_email }}" class="link link--text">{{ contact_email }}</a></span>
+                        </p>
+                      {%- endif -%}
+                    </div>
                   {%- when 'text' -%}
                     <div class="footer-block__details-content rte">
                       {{ block.settings.subtext }}
@@ -327,6 +388,54 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "about",
+      "name": "About",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Description",
+          "default": "<p>We're committed to quality products, clear information, and friendly support, so you get exactly what you need, hassle-free.</p>"
+        }
+      ]
+    },
+    {
+      "type": "policy_list",
+      "name": "Information (policies)",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Information"
+        }
+      ]
+    },
+    {
+      "type": "contact_info",
+      "name": "Contact info",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Contact Us"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Phone",
+          "info": "Leave blank to hide"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "Email",
+          "info": "Leave blank to use the store's contact email"
+        }
+      ]
     },
     {
       "type": "link_list",
