@@ -1910,6 +1910,23 @@
     "main-page": {
       "name": "Page"
     },
+    "policy_page": {
+      "name": "Policy page",
+      "settings": {
+        "policy_type": {
+          "label": "Default policy content",
+          "info": "Shown automatically when the page's content is empty. Add content to the page itself to override this default text.",
+          "options__1": "None",
+          "options__2": "Privacy policy",
+          "options__3": "Shipping policy",
+          "options__4": "Return policy"
+        },
+        "last_updated": {
+          "label": "Last updated date",
+          "info": "Optional. For example, \"August 16, 2026\"."
+        }
+      }
+    },
     "main-password-footer": {
       "name": "Password footer"
     },
