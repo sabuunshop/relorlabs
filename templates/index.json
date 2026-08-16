@@ -185,6 +185,18 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "icon_with_text_3xwgg4": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "heading_1": "Heading",
+            "icon_2": "return",
+            "heading_2": "Heading",
+            "icon_3": "truck",
+            "heading_3": "Heading"
+          }
+        },
         "buy_buttons_xU73CU": {
           "type": "buy_buttons",
           "settings": {
@@ -205,12 +217,13 @@
         "price_cPaBUj",
         "variant_picker_qfQxFk",
         "quantity_selector_pmh3TC",
+        "icon_with_text_3xwgg4",
         "buy_buttons_xU73CU",
         "share_qPjFgi"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "",
+        "product": "relorguard-anti-snoring-mouthpiece",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",

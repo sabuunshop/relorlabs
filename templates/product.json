@@ -1,1 +1,448 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"text","settings":{"text":"{{ product.vendor }}","text_style":"uppercase"}},"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","swatch_shape":"circle"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"description":{"type":"description","settings":{}},"share":{"type":"share","settings":{"share_label":"Share"}}},"block_order":["vendor","title","price","variant_picker","quantity_selector","buy_buttons","description","share"],"settings":{"enable_sticky_info":true,"color_scheme":"scheme-1","media_size":"large","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"stacked","mobile_thumbnails":"hide","media_position":"left","image_zoom":"lightbox","hide_variants":true,"enable_video_looping":false,"padding_top":36,"padding_bottom":12}},"disclosures":{"type":"disclosures","settings":{"padding_top":36,"padding_bottom":0}},"related-products":{"type":"related-products","settings":{"heading":"You may also like","heading_size":"h2","products_to_show":4,"columns_desktop":4,"columns_mobile":"2","color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"padding_top":36,"padding_bottom":28}}},"order":["main","disclosures","related-products"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "image_with_text_citEVp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BwB6Dz": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Why Snoring Happens</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_n37jBK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Snoring occurs when the muscles in your neck relax during sleep, causing your airway to narrow. This narrowing creates vibration — the sound we know as snoring — and reduces oxygen flow.<br/><br/>Relor Guard solves this using Mandibular Advancement, a proven technique that gently positions your lower jaw slightly forward. This widens the airway, stops vibration, and allows oxygen to move freely again.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_pxzcMt": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn the Science",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BwB6Dz",
+        "text_n37jBK",
+        "button_pxzcMt"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Product_Image_7.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_Mb4MNR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hLC7gj": {
+          "type": "heading",
+          "settings": {
+            "heading": "🔬 How Relor Guard Works",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hLC7gj"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_iY7VDm": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_FMXyUk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Jaw Support",
+            "heading_size": "h1"
+          }
+        },
+        "text_LF6JiD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Relor Guard’s jaw support is the core of how the device stops snoring — and it works through a precise, clinically proven mechanism called Mandibular Advancement.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CccXiz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Buy Now",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FMXyUk",
+        "text_LF6JiD",
+        "button_CccXiz"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Product_Image_8.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_J7pL8M": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jkVmKn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Airway Expansion",
+            "heading_size": "h1"
+          }
+        },
+        "text_iL4jUc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Relor Guard opens the throat for quiet, effortless breathing. When the lower jaw is gently moved forward, the tongue shifts with it, creating a wider, clearer passage for air to flow. </p>",
+            "text_style": "body"
+          }
+        },
+        "button_gtLTgk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Buy Now",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jkVmKn",
+        "text_iL4jUc",
+        "button_gtLTgk"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Product_Image_8.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_4AnYhY": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Banners_Images.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "multicolumn_4GUXwp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_m6wDCf": {
+          "type": "column",
+          "settings": {
+            "title": "Jaw Support",
+            "text": "<p>Relor Guard’s jaw support is the core of how the device stops snoring — and it works through a precise, clinically proven mechanism called Mandibular Advancement.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mcyhCV": {
+          "type": "column",
+          "settings": {
+            "title": "Airway Expansion",
+            "text": "<p>Relor Guard opens the throat for quiet, effortless breathing. When the lower jaw is gently moved forward, the tongue shifts with it, creating a wider, clearer passage for air to flow. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_waY93y": {
+          "type": "column",
+          "settings": {
+            "title": "Tongue Stabilization",
+            "text": "<p>Relor Guard gently moves the lower jaw forward, which brings the tongue forward with it and keeps it stable instead of collapsing backward. This supported position keeps the airway open, allows smooth airflow, eliminates vibration, and makes breathing quiet and effortless.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PQekcD": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XDABdr": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_m6wDCf",
+        "column_mcyhCV",
+        "column_waY93y",
+        "column_PQekcD",
+        "column_XDABdr"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "🔬 How Relor Guard Works",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_UW4Ljd": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_YYd9CQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_wm6i8j": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_hwrwRp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_HcXfMR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_YYd9CQ",
+        "collapsible_row_wm6i8j",
+        "collapsible_row_hwrwRp",
+        "collapsible_row_HcXfMR"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "disclosures": {
+      "type": "disclosures",
+      "settings": {
+        "heading": "Disclosures",
+        "heading_size": "h2",
+        "open_by_default": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_citEVp",
+    "rich_text_Mb4MNR",
+    "image_with_text_iY7VDm",
+    "image_with_text_J7pL8M",
+    "image_banner_4AnYhY",
+    "multicolumn_4GUXwp",
+    "collapsible_content_UW4Ljd",
+    "disclosures",
+    "related-products"
+  ]
+}
