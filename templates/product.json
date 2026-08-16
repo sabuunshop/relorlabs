@@ -393,6 +393,92 @@
         "padding_bottom": 52
       }
     },
+    "comparison_table_R3gArD": {
+      "type": "comparison-table",
+      "blocks": {
+        "comparison_row_1": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Fixes the real cause of snoring",
+            "competitor_1": false,
+            "competitor_2": false,
+            "competitor_3": false,
+            "competitor_4": false
+          }
+        },
+        "comparison_row_2": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Keeps your airway open all night",
+            "competitor_1": false,
+            "competitor_2": false,
+            "competitor_3": false,
+            "competitor_4": false
+          }
+        },
+        "comparison_row_3": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Adjustable and comfortable",
+            "competitor_1": true,
+            "competitor_2": true,
+            "competitor_3": false,
+            "competitor_4": true
+          }
+        },
+        "comparison_row_4": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Works in any sleeping position",
+            "competitor_1": false,
+            "competitor_2": false,
+            "competitor_3": true,
+            "competitor_4": true
+          }
+        },
+        "comparison_row_5": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Stays in place all night",
+            "competitor_1": false,
+            "competitor_2": false,
+            "competitor_3": true,
+            "competitor_4": true
+          }
+        },
+        "comparison_row_6": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Drug-free and safe to use every night",
+            "competitor_1": true,
+            "competitor_2": true,
+            "competitor_3": false,
+            "competitor_4": false
+          }
+        }
+      },
+      "block_order": [
+        "comparison_row_1",
+        "comparison_row_2",
+        "comparison_row_3",
+        "comparison_row_4",
+        "comparison_row_5",
+        "comparison_row_6"
+      ],
+      "name": "t:sections.comparison_table.name",
+      "settings": {
+        "heading": "Why RelorGuard® is the Ultimate Snoring Solution",
+        "heading_size": "h1",
+        "product_name": "RelorGuard",
+        "competitor_1": "Nose Strips",
+        "competitor_2": "Pillows",
+        "competitor_3": "Nasal Sprays",
+        "competitor_4": "Mouth Tape",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
     "collapsible_content_UW4Ljd": {
       "type": "collapsible-content",
       "blocks": {
@@ -495,6 +581,7 @@
     "image_with_text_KhFa7A",
     "image_banner_4AnYhY",
     "rich_text_tEB9gA",
+    "comparison_table_R3gArD",
     "collapsible_content_UW4Ljd",
     "disclosures",
     "related-products"

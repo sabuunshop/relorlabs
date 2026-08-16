@@ -1934,6 +1934,46 @@
     "main-page": {
       "name": "Page"
     },
+    "comparison_table": {
+      "name": "Comparison table",
+      "presets": {
+        "name": "Comparison table"
+      },
+      "settings": {
+        "heading": {
+          "label": "Heading",
+          "default": "Why RelorGuard® is the Ultimate Snoring Solution"
+        },
+        "product_name": {
+          "label": "Highlighted product name"
+        },
+        "competitor_1": {
+          "label": "Competitor 1 name"
+        },
+        "competitor_2": {
+          "label": "Competitor 2 name"
+        },
+        "competitor_3": {
+          "label": "Competitor 3 name"
+        },
+        "competitor_4": {
+          "label": "Competitor 4 name"
+        }
+      },
+      "blocks": {
+        "comparison_row": {
+          "name": "Feature row",
+          "settings": {
+            "feature": {
+              "label": "Feature"
+            },
+            "competitor": {
+              "label": "Included"
+            }
+          }
+        }
+      }
+    },
     "policy_page": {
       "name": "Policy page",
       "settings": {

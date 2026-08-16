@@ -279,6 +279,10 @@
       "last_updated": "Last updated: {{ date }}"
     },
 
+    "comparison_table": {
+      "features_label": "Features"
+    },
+
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
