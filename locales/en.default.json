@@ -275,6 +275,10 @@
       "announcement_bar": "Announcement bar"
     },
 
+    "policy_page": {
+      "last_updated": "Last updated: {{ date }}"
+    },
+
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
