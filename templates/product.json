@@ -170,20 +170,11 @@
             "text": "<p>Relor Guard’s jaw support is the core of how the device stops snoring — and it works through a precise, clinically proven mechanism called Mandibular Advancement.</p>",
             "text_style": "body"
           }
-        },
-        "button_CccXiz": {
-          "type": "button",
-          "settings": {
-            "button_label": "Buy Now",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_FMXyUk",
-        "text_LF6JiD",
-        "button_CccXiz"
+        "text_LF6JiD"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -199,7 +190,7 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "image_with_text_J7pL8M": {
@@ -218,20 +209,11 @@
             "text": "<p>Relor Guard opens the throat for quiet, effortless breathing. When the lower jaw is gently moved forward, the tongue shifts with it, creating a wider, clearer passage for air to flow. </p>",
             "text_style": "body"
           }
-        },
-        "button_gtLTgk": {
-          "type": "button",
-          "settings": {
-            "button_label": "Buy Now",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_jkVmKn",
-        "text_iL4jUc",
-        "button_gtLTgk"
+        "text_iL4jUc"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -247,7 +229,7 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "image_with_text_ErCn4m": {
@@ -266,20 +248,11 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body"
           }
-        },
-        "button_gYaY8n": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_Tdhmyz",
-        "text_Ah3HWY",
-        "button_gYaY8n"
+        "text_Ah3HWY"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -368,20 +341,13 @@
         "heading_c9w9gb": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>2,600+ Verified Reviews</strong>",
+            "heading": "<strong>★ 2,600+ Verified Reviews</strong>",
             "heading_size": "h1"
-          }
-        },
-        "text_enDnKV": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         }
       },
       "block_order": [
-        "heading_c9w9gb",
-        "text_enDnKV"
+        "heading_c9w9gb"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -390,92 +356,6 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "comparison_table_R3gArD": {
-      "type": "comparison-table",
-      "blocks": {
-        "comparison_row_1": {
-          "type": "comparison_row",
-          "settings": {
-            "feature": "Fixes the real cause of snoring",
-            "competitor_1": false,
-            "competitor_2": false,
-            "competitor_3": false,
-            "competitor_4": false
-          }
-        },
-        "comparison_row_2": {
-          "type": "comparison_row",
-          "settings": {
-            "feature": "Keeps your airway open all night",
-            "competitor_1": false,
-            "competitor_2": false,
-            "competitor_3": false,
-            "competitor_4": false
-          }
-        },
-        "comparison_row_3": {
-          "type": "comparison_row",
-          "settings": {
-            "feature": "Adjustable and comfortable",
-            "competitor_1": true,
-            "competitor_2": true,
-            "competitor_3": false,
-            "competitor_4": true
-          }
-        },
-        "comparison_row_4": {
-          "type": "comparison_row",
-          "settings": {
-            "feature": "Works in any sleeping position",
-            "competitor_1": false,
-            "competitor_2": false,
-            "competitor_3": true,
-            "competitor_4": true
-          }
-        },
-        "comparison_row_5": {
-          "type": "comparison_row",
-          "settings": {
-            "feature": "Stays in place all night",
-            "competitor_1": false,
-            "competitor_2": false,
-            "competitor_3": true,
-            "competitor_4": true
-          }
-        },
-        "comparison_row_6": {
-          "type": "comparison_row",
-          "settings": {
-            "feature": "Drug-free and safe to use every night",
-            "competitor_1": true,
-            "competitor_2": true,
-            "competitor_3": false,
-            "competitor_4": false
-          }
-        }
-      },
-      "block_order": [
-        "comparison_row_1",
-        "comparison_row_2",
-        "comparison_row_3",
-        "comparison_row_4",
-        "comparison_row_5",
-        "comparison_row_6"
-      ],
-      "name": "t:sections.comparison_table.name",
-      "settings": {
-        "heading": "Why RelorGuard® is the Ultimate Snoring Solution",
-        "heading_size": "h1",
-        "product_name": "RelorGuard",
-        "competitor_1": "Nose Strips",
-        "competitor_2": "Pillows",
-        "competitor_3": "Nasal Sprays",
-        "competitor_4": "Mouth Tape",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
         "padding_bottom": 52
       }
     },
@@ -581,7 +461,6 @@
     "image_with_text_KhFa7A",
     "image_banner_4AnYhY",
     "rich_text_tEB9gA",
-    "comparison_table_R3gArD",
     "collapsible_content_UW4Ljd",
     "disclosures",
     "related-products"
