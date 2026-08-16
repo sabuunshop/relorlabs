@@ -1017,6 +1017,21 @@
               "default": "<p>Share contact information, store details, and brand content with your customers.</p>"
             }
           }
+        },
+        "contact_info": {
+          "name": "Contact information",
+          "settings": {
+            "heading": {
+              "label": "Heading",
+              "default": "Contact Us"
+            },
+            "phone": {
+              "label": "Phone number"
+            },
+            "email": {
+              "label": "Email address"
+            }
+          }
         }
       },
       "settings": {

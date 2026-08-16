@@ -322,7 +322,11 @@
       }
     },
     "footer": {
-      "payment": "Payment methods"
+      "payment": "Payment methods",
+      "contact_info": {
+        "phone_label": "Phone:",
+        "email_label": "Email:"
+      }
     },
     "featured_blog": {
       "view_all": "View all",
