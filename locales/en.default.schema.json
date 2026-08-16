@@ -1934,7 +1934,8 @@
           "options__1": "None",
           "options__2": "Privacy policy",
           "options__3": "Shipping policy",
-          "options__4": "Return policy"
+          "options__4": "Return policy",
+          "options__5": "Terms of service"
         },
         "last_updated": {
           "label": "Last updated date",

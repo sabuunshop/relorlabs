@@ -36,6 +36,8 @@
       {%- render 'policy-content-shipping' -%}
     {%- elsif section.settings.policy_type == 'returns' -%}
       {%- render 'policy-content-returns' -%}
+    {%- elsif section.settings.policy_type == 'terms' -%}
+      {%- render 'policy-content-terms' -%}
     {%- endif -%}
   </div>
 </div>
@@ -67,6 +69,10 @@
         {
           "value": "returns",
           "label": "t:sections.policy_page.settings.policy_type.options__4"
+        },
+        {
+          "value": "terms",
+          "label": "t:sections.policy_page.settings.policy_type.options__5"
         }
       ],
       "default": "none"
