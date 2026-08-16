@@ -34,9 +34,26 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
+        "bundle_pricing": {
+          "type": "bundle_pricing",
+          "settings": {
+            "tier_1_label": "RelorGuard 1x Mouthpiece",
+            "tier_1_quantity": 1,
+            "tier_1_discount": 29,
+            "tier_1_perks": "",
+            "tier_1_selected": false,
+            "tier_2_label": "RelorGuard 2x Mouthpiece",
+            "tier_2_quantity": 2,
+            "tier_2_discount": 43,
+            "tier_2_perks": "120-Days Snore Free\nFREE Shipping\nFREE Travel Case\nFREE Cleaning Brush\nFREE Ebook",
+            "tier_2_selected": true,
+            "tier_3_label": "RelorGuard 3x Mouthpiece",
+            "tier_3_quantity": 3,
+            "tier_3_discount": 53,
+            "tier_3_perks": "",
+            "tier_3_selected": false,
+            "trust_text": "Try It Risk-Free For 30 Nights"
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -61,7 +78,7 @@
         "title",
         "price",
         "variant_picker",
-        "quantity_selector",
+        "bundle_pricing",
         "buy_buttons",
         "description",
         "share"

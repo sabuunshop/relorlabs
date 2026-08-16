@@ -2050,6 +2050,42 @@
         "quantity_selector": {
           "name": "Quantity selector"
         },
+        "bundle_pricing": {
+          "name": "Bundle pricing",
+          "settings": {
+            "tier_1_header": {
+              "content": "Tier 1"
+            },
+            "tier_2_header": {
+              "content": "Tier 2"
+            },
+            "tier_3_header": {
+              "content": "Tier 3"
+            },
+            "footer_header": {
+              "content": "Trust message"
+            },
+            "tier_label": {
+              "label": "Label"
+            },
+            "tier_quantity": {
+              "label": "Quantity"
+            },
+            "tier_discount": {
+              "label": "Discount"
+            },
+            "tier_perks": {
+              "label": "Perks (one per line)",
+              "info": "Shown only when this tier is selected. Leave blank for no perks list."
+            },
+            "tier_selected": {
+              "label": "Selected by default"
+            },
+            "trust_text": {
+              "label": "Text"
+            }
+          }
+        },
         "variant_picker": {
           "name": "Variant picker",
           "settings": {

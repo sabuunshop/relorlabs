@@ -1,0 +1,205 @@
+{% comment %}
+  Renders a 3-tier quantity bundle selector with its own Add to Cart button.
+  Submits to the shared product form via the HTML `form` attribute, so it
+  must be rendered on the same page as a `buy-buttons` block (hidden via
+  CSS below) which owns the actual <form> and variant id input.
+
+  Accepts:
+  - product: {Object} product object.
+  - block: {Object} block information (bundle_pricing block settings).
+  - product_form_id: {String} id of the shared product form.
+  - section: {Object} section object.
+
+  Usage:
+  {% render 'bundle-pricing', product: product, block: block, product_form_id: product_form_id, section: section %}
+{% endcomment %}
+{{ 'component-bundle-pricing.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  /*
+    The bundle-pricing block supplies its own Add to Cart button and submits
+    to the same product form as the buy-buttons block (via the HTML `form`
+    attribute), so the buy-buttons block's own button/quantity chrome is
+    hidden here rather than duplicated. Its <form> and variant id input are
+    still required and remain in the DOM.
+  */
+  #{{ product_form_id }} .product-form__buttons {
+    display: none;
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign variant = product.selected_or_first_available_variant
+  assign unit_price = variant.price
+  assign tier_indexes = '1,2,3' | split: ','
+  assign selected_tier = 2
+
+  # Fallback in case no tier is marked "selected by default" in settings.
+  assign selected_quantity = block.settings.tier_2_quantity
+  assign fallback_original_total = unit_price | times: selected_quantity
+  assign fallback_discount_multiplier = 100 | minus: block.settings.tier_2_discount
+  assign fallback_current_total = fallback_original_total | times: fallback_discount_multiplier | divided_by: 100.0 | round
+  if settings.currency_code_enabled
+    assign selected_current_formatted = fallback_current_total | money_with_currency
+    assign selected_original_formatted = fallback_original_total | money_with_currency
+  else
+    assign selected_current_formatted = fallback_current_total | money
+    assign selected_original_formatted = fallback_original_total | money
+  endif
+-%}
+
+<bundle-pricing
+  class="bundle-pricing"
+  data-form-id="{{ product_form_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="bundle-pricing__tiers" role="radiogroup">
+    {%- for i in tier_indexes -%}
+      {%- liquid
+        case i
+          when '1'
+            assign tier_quantity = block.settings.tier_1_quantity
+            assign tier_label = block.settings.tier_1_label
+            assign tier_discount = block.settings.tier_1_discount
+            assign tier_perks = block.settings.tier_1_perks
+            assign tier_selected = block.settings.tier_1_selected
+          when '2'
+            assign tier_quantity = block.settings.tier_2_quantity
+            assign tier_label = block.settings.tier_2_label
+            assign tier_discount = block.settings.tier_2_discount
+            assign tier_perks = block.settings.tier_2_perks
+            assign tier_selected = block.settings.tier_2_selected
+          when '3'
+            assign tier_quantity = block.settings.tier_3_quantity
+            assign tier_label = block.settings.tier_3_label
+            assign tier_discount = block.settings.tier_3_discount
+            assign tier_perks = block.settings.tier_3_perks
+            assign tier_selected = block.settings.tier_3_selected
+        endcase
+
+        assign tier_original_total = unit_price | times: tier_quantity
+        assign tier_discount_multiplier = 100 | minus: tier_discount
+        assign tier_current_total = tier_original_total | times: tier_discount_multiplier | divided_by: 100.0 | round
+
+        if tier_selected
+          assign selected_tier = i
+        endif
+
+        if settings.currency_code_enabled
+          assign tier_current_formatted = tier_current_total | money_with_currency
+          assign tier_original_formatted = tier_original_total | money_with_currency
+        else
+          assign tier_current_formatted = tier_current_total | money
+          assign tier_original_formatted = tier_original_total | money
+        endif
+
+        assign tier_original_formatted_or_blank = ''
+        if tier_discount > 0
+          assign tier_original_formatted_or_blank = tier_original_formatted
+        endif
+
+        if tier_selected
+          assign selected_current_formatted = tier_current_formatted
+          assign selected_original_formatted = tier_original_formatted_or_blank
+          assign selected_quantity = tier_quantity
+        endif
+      -%}
+      <label class="bundle-pricing__tier">
+        <input
+          type="radio"
+          class="bundle-pricing__radio visually-hidden"
+          name="BundleTier-{{ section.id }}"
+          value="{{ tier_quantity }}"
+          data-current-formatted="{{ tier_current_formatted }}"
+          data-original-formatted="{{ tier_original_formatted_or_blank }}"
+          {% if tier_selected %}
+            checked
+          {% endif %}
+        >
+        <span class="bundle-pricing__card">
+          <span class="bundle-pricing__row">
+            {%- if product.featured_media != blank -%}
+              <span class="bundle-pricing__thumb">
+                {{-
+                  product.featured_media
+                  | image_url: width: 80
+                  | image_tag: loading: 'lazy', widths: '40, 80', sizes: '40px'
+                -}}
+              </span>
+            {%- endif -%}
+            <span class="bundle-pricing__info">
+              <span class="bundle-pricing__label">{{ tier_label }}</span>
+              <span class="bundle-pricing__price">
+                <span class="bundle-pricing__price-current">
+                  {%- if settings.currency_code_enabled -%}
+                    {{- tier_current_total | money_with_currency -}}
+                  {%- else -%}
+                    {{- tier_current_total | money -}}
+                  {%- endif -%}
+                </span>
+                {%- if tier_discount > 0 -%}
+                  <s class="bundle-pricing__price-original">
+                    {%- if settings.currency_code_enabled -%}
+                      {{- tier_original_total | money_with_currency -}}
+                    {%- else -%}
+                      {{- tier_original_total | money -}}
+                    {%- endif -%}
+                  </s>
+                {%- endif -%}
+              </span>
+            </span>
+            {%- if tier_discount > 0 -%}
+              <span class="bundle-pricing__badge">
+                {{- 'products.product.bundle_pricing.save' | t: percent: tier_discount -}}
+              </span>
+            {%- endif -%}
+          </span>
+          {%- if tier_perks != blank -%}
+            {%- assign tier_perk_lines = tier_perks | newline_to_br | split: '<br />' -%}
+            <span class="bundle-pricing__perks">
+              <ul class="list-unstyled">
+                {%- for perk in tier_perk_lines -%}
+                  {%- assign perk = perk | strip -%}
+                  {%- if perk != blank -%}
+                    <li>
+                      <span class="svg-wrapper">{{- 'icon-checkmark.svg' | inline_asset_content -}}</span>
+                      {{- perk -}}
+                    </li>
+                  {%- endif -%}
+                {%- endfor -%}
+              </ul>
+            </span>
+          {%- endif -%}
+        </span>
+      </label>
+    {%- endfor -%}
+  </div>
+
+  <input
+    type="hidden"
+    name="quantity"
+    form="{{ product_form_id }}"
+    class="bundle-pricing__quantity-input"
+    value="{{ selected_quantity }}"
+  >
+
+  <button
+    type="submit"
+    form="{{ product_form_id }}"
+    class="bundle-pricing__submit button button--primary button--full-width"
+  >
+    <span class="bundle-pricing__submit-text">
+      {{- 'products.product.add_to_cart' | t -}}
+      <span aria-hidden="true">•</span>
+      <span class="bundle-pricing__submit-price">{{ selected_current_formatted }}</span>
+      <s class="bundle-pricing__submit-original">{{ selected_original_formatted }}</s>
+    </span>
+    {%- render 'loading-spinner' -%}
+  </button>
+
+  {%- if block.settings.trust_text != blank -%}
+    <p class="bundle-pricing__trust">{{ block.settings.trust_text }}</p>
+  {%- endif -%}
+</bundle-pricing>
+
+<script src="{{ 'bundle-pricing.js' | asset_url }}" defer="defer"></script>
