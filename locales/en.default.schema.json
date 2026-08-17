@@ -1941,6 +1941,20 @@
     "main-page": {
       "name": "Page"
     },
+    "scrolling_banner": {
+      "name": "Scrolling banner",
+      "presets": {
+        "name": "Scrolling banner"
+      },
+      "settings": {
+        "text": {
+          "label": "Banner text"
+        },
+        "speed": {
+          "label": "Scroll speed"
+        }
+      }
+    },
     "comparison_table": {
       "name": "Comparison table",
       "presets": {

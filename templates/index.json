@@ -61,6 +61,17 @@
         "padding_bottom": 36
       }
     },
+    "scrolling_banner_snoreQ1": {
+      "type": "scrolling-banner",
+      "name": "t:sections.scrolling_banner.name",
+      "settings": {
+        "text": "Designed for your comfort, Open your airway. Silence the snoring. Sleep deeper tonight.",
+        "color_scheme": "scheme-2",
+        "speed": 30,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
     "multicolumn_i9EAiB": {
       "type": "multicolumn",
       "blocks": {
@@ -286,6 +297,7 @@
   "order": [
     "image_banner_d76QH7",
     "multirow_QB9iQQ",
+    "scrolling_banner_snoreQ1",
     "multicolumn_i9EAiB",
     "image_with_text_cQLKHW",
     "featured_product_re7CYC",

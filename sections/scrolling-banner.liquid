@@ -1,0 +1,132 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .scrolling-banner {
+    overflow: hidden;
+  }
+
+  .scrolling-banner__track {
+    display: flex;
+    width: max-content;
+    animation: scrolling-banner-{{ section.id }} {{ section.settings.speed }}s linear infinite;
+  }
+
+  .scrolling-banner__group {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .scrolling-banner__item {
+    white-space: nowrap;
+    font-size: 1.6rem;
+    padding: 0 1.6rem;
+  }
+
+  .scrolling-banner__divider {
+    opacity: 0.4;
+  }
+
+  @keyframes scrolling-banner-{{ section.id }} {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scrolling-banner__track {
+      animation: none;
+    }
+  }
+{%- endstyle -%}
+
+<div class="scrolling-banner color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="scrolling-banner__track" aria-hidden="false">
+    <div class="scrolling-banner__group">
+      {%- for i in (1..10) -%}
+        <span class="scrolling-banner__item">{{ section.settings.text | escape }}</span>
+        <span class="scrolling-banner__divider" aria-hidden="true">•</span>
+      {%- endfor -%}
+    </div>
+    <div class="scrolling-banner__group" aria-hidden="true">
+      {%- for i in (1..10) -%}
+        <span class="scrolling-banner__item">{{ section.settings.text | escape }}</span>
+        <span class="scrolling-banner__divider" aria-hidden="true">•</span>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.scrolling_banner.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "t:sections.scrolling_banner.settings.text.label",
+      "default": "Designed for your comfort, Open your airway. Silence the snoring. Sleep deeper tonight."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "min": 10,
+      "max": 120,
+      "step": 5,
+      "unit": "s",
+      "label": "t:sections.scrolling_banner.settings.speed.label",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.scrolling_banner.presets.name"
+    }
+  ]
+}
+{% endschema %}
