@@ -485,6 +485,13 @@
                     block: block,
                     surface: 'product_page'
                   -%}
+                {%- when 'bundle_pricing' -%}
+                  {%- render 'bundle-pricing',
+                    product: product,
+                    block: block,
+                    product_form_id: product_form_id,
+                    section: section
+                  -%}
                 {%- when 'variant_picker' -%}
                   {% render 'product-variant-picker',
                     product: product,
@@ -877,6 +884,150 @@
       "type": "quantity_selector",
       "name": "t:sections.main-product.blocks.quantity_selector.name",
       "limit": 1
+    },
+    {
+      "type": "bundle_pricing",
+      "name": "t:sections.main-product.blocks.bundle_pricing.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "t:sections.main-product.blocks.bundle_pricing.settings.tier_1_header.content"
+        },
+        {
+          "type": "text",
+          "id": "tier_1_label",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_label.label",
+          "default": "RelorGuard 1x Mouthpiece"
+        },
+        {
+          "type": "range",
+          "id": "tier_1_quantity",
+          "min": 1,
+          "max": 10,
+          "step": 1,
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_quantity.label",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "tier_1_discount",
+          "min": 0,
+          "max": 90,
+          "step": 1,
+          "unit": "%",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_discount.label",
+          "info": "t:sections.main-product.blocks.bundle_pricing.settings.tier_discount.info",
+          "default": 0
+        },
+        {
+          "type": "textarea",
+          "id": "tier_1_perks",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_perks.label",
+          "info": "t:sections.main-product.blocks.bundle_pricing.settings.tier_perks.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "tier_1_selected",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_selected.label",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:sections.main-product.blocks.bundle_pricing.settings.tier_2_header.content"
+        },
+        {
+          "type": "text",
+          "id": "tier_2_label",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_label.label",
+          "default": "RelorGuard 2x Mouthpiece"
+        },
+        {
+          "type": "range",
+          "id": "tier_2_quantity",
+          "min": 1,
+          "max": 10,
+          "step": 1,
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_quantity.label",
+          "default": 2
+        },
+        {
+          "type": "range",
+          "id": "tier_2_discount",
+          "min": 0,
+          "max": 90,
+          "step": 1,
+          "unit": "%",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_discount.label",
+          "info": "t:sections.main-product.blocks.bundle_pricing.settings.tier_discount.info",
+          "default": 15
+        },
+        {
+          "type": "textarea",
+          "id": "tier_2_perks",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_perks.label",
+          "info": "t:sections.main-product.blocks.bundle_pricing.settings.tier_perks.info",
+          "default": "120-Days Snore Free\nFREE Shipping\nFREE Travel Case\nFREE Cleaning Brush\nFREE Ebook"
+        },
+        {
+          "type": "checkbox",
+          "id": "tier_2_selected",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_selected.label",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "t:sections.main-product.blocks.bundle_pricing.settings.tier_3_header.content"
+        },
+        {
+          "type": "text",
+          "id": "tier_3_label",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_label.label",
+          "default": "RelorGuard 3x Mouthpiece"
+        },
+        {
+          "type": "range",
+          "id": "tier_3_quantity",
+          "min": 1,
+          "max": 10,
+          "step": 1,
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_quantity.label",
+          "default": 3
+        },
+        {
+          "type": "range",
+          "id": "tier_3_discount",
+          "min": 0,
+          "max": 90,
+          "step": 1,
+          "unit": "%",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_discount.label",
+          "info": "t:sections.main-product.blocks.bundle_pricing.settings.tier_discount.info",
+          "default": 25
+        },
+        {
+          "type": "textarea",
+          "id": "tier_3_perks",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_perks.label",
+          "info": "t:sections.main-product.blocks.bundle_pricing.settings.tier_perks.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "tier_3_selected",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.tier_selected.label",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:sections.main-product.blocks.bundle_pricing.settings.footer_header.content"
+        },
+        {
+          "type": "text",
+          "id": "trust_text",
+          "label": "t:sections.main-product.blocks.bundle_pricing.settings.trust_text.label",
+          "default": "Try It Risk-Free For 30 Nights"
+        }
+      ]
     },
     {
       "type": "variant_picker",
