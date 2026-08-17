@@ -65,9 +65,9 @@
       "type": "scrolling-banner",
       "name": "t:sections.scrolling_banner.name",
       "settings": {
-        "text": "┃Designed for your comfort┃Open your airway┃Silence the snoring┃Sleep deeper tonight┃Try Risk-Free for 30 days",
+        "text": "┃Designed for your comfort┃Silence the snoring┃Sleep deeper tonight┃Try Risk-Free for 30 days",
         "color_scheme": "scheme-5",
-        "speed": 100,
+        "speed": 120,
         "padding_top": 16,
         "padding_bottom": 16
       }
