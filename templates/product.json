@@ -45,7 +45,7 @@
             "tier_2_label": "RelorGuard 2x Mouthpiece",
             "tier_2_quantity": 2,
             "tier_2_discount": 15,
-            "tier_2_perks": "120-Days Snore Free\nFREE Shipping\nFREE Travel Case\nFREE Cleaning Brush\nFREE Ebook",
+            "tier_2_perks": "FREE Shipping\nFREE Travel Case\nFREE Cleaning Brush\nFREE Ebook",
             "tier_2_selected": true,
             "tier_3_label": "RelorGuard 3x Mouthpiece",
             "tier_3_quantity": 3,
@@ -153,7 +153,7 @@
         "heading_hLC7gj": {
           "type": "heading",
           "settings": {
-            "heading": "🔬 How Relor Guard Works",
+            "heading": "🔬 How RelorGuard Works",
             "heading_size": "h0"
           }
         }
@@ -187,20 +187,11 @@
             "text": "<p>Relor Guard’s jaw support is the core of how the device stops snoring — and it works through a precise, clinically proven mechanism called Mandibular Advancement.</p>",
             "text_style": "body"
           }
-        },
-        "button_CccXiz": {
-          "type": "button",
-          "settings": {
-            "button_label": "Buy Now",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_FMXyUk",
-        "text_LF6JiD",
-        "button_CccXiz"
+        "text_LF6JiD"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -216,7 +207,7 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "image_with_text_J7pL8M": {
@@ -235,20 +226,11 @@
             "text": "<p>Relor Guard opens the throat for quiet, effortless breathing. When the lower jaw is gently moved forward, the tongue shifts with it, creating a wider, clearer passage for air to flow. </p>",
             "text_style": "body"
           }
-        },
-        "button_gtLTgk": {
-          "type": "button",
-          "settings": {
-            "button_label": "Buy Now",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_jkVmKn",
-        "text_iL4jUc",
-        "button_gtLTgk"
+        "text_iL4jUc"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -264,7 +246,7 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "image_with_text_ErCn4m": {
@@ -280,23 +262,14 @@
         "text_Ah3HWY": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Tongue stabilization is the quiet mechanism that makes RelorGuard stop snoring so effectively. When you fall asleep, the tongue naturally relaxes and tends to fall backward, narrowing the airway and creating vibration. RelorGuard gently moves the lower jaw forward, and because the tongue is attached to the jaw, it follows that movement — shifting slightly forward and staying stable instead of collapsing. With the tongue held in this supported position, the airway stays open, airflow becomes smooth, and the vibration that causes snoring disappears.</p>",
             "text_style": "body"
-          }
-        },
-        "button_gYaY8n": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "heading_Tdhmyz",
-        "text_Ah3HWY",
-        "button_gYaY8n"
+        "text_Ah3HWY"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -321,21 +294,21 @@
         "heading_cwefBM": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "<strong>Vibration Reduction</strong>",
             "heading_size": "h1"
           }
         },
         "text_NtKFb3": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Snoring happens when the airway becomes narrow and soft tissues begin to vibrate as air squeezes through. When Relor Guard gently moves the lower jaw forward, the tongue follows and the airway expands. With more space for air to move, the airflow becomes smooth instead of turbulent — and without turbulence, the tissues no longer vibrate. No vibration means no snoring, which is why breathing becomes quiet and effortless</p>",
             "text_style": "body"
           }
         },
         "button_U6AXQt": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false
           }
@@ -348,7 +321,8 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "height": "adapt",
+        "image": "shopify://shop_images/hf_20260815_110938_5ed30bd1-89a0-4ab4-b63c-2410b35a6b5d.png",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "image_behavior": "none",
@@ -385,20 +359,13 @@
         "heading_c9w9gb": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>2,600+ Verified Reviews</strong>",
+            "heading": "<strong>★ 2,600+ Verified Reviews</strong>",
             "heading_size": "h1"
-          }
-        },
-        "text_enDnKV": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         }
       },
       "block_order": [
-        "heading_c9w9gb",
-        "text_enDnKV"
+        "heading_c9w9gb"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -410,10 +377,10 @@
         "padding_bottom": 52
       }
     },
-    "comparison_table_R3gArD": {
+    "comparison_table_3hdEgg": {
       "type": "comparison-table",
       "blocks": {
-        "comparison_row_1": {
+        "comparison_row_PxpzCa": {
           "type": "comparison_row",
           "settings": {
             "feature": "Fixes the real cause of snoring",
@@ -423,7 +390,7 @@
             "competitor_4": false
           }
         },
-        "comparison_row_2": {
+        "comparison_row_xwwanf": {
           "type": "comparison_row",
           "settings": {
             "feature": "Keeps your airway open all night",
@@ -433,7 +400,7 @@
             "competitor_4": false
           }
         },
-        "comparison_row_3": {
+        "comparison_row_abFfgH": {
           "type": "comparison_row",
           "settings": {
             "feature": "Adjustable and comfortable",
@@ -443,7 +410,7 @@
             "competitor_4": true
           }
         },
-        "comparison_row_4": {
+        "comparison_row_4zkip4": {
           "type": "comparison_row",
           "settings": {
             "feature": "Works in any sleeping position",
@@ -453,7 +420,7 @@
             "competitor_4": true
           }
         },
-        "comparison_row_5": {
+        "comparison_row_NqfP7X": {
           "type": "comparison_row",
           "settings": {
             "feature": "Stays in place all night",
@@ -463,7 +430,7 @@
             "competitor_4": true
           }
         },
-        "comparison_row_6": {
+        "comparison_row_WGFFe8": {
           "type": "comparison_row",
           "settings": {
             "feature": "Drug-free and safe to use every night",
@@ -475,25 +442,25 @@
         }
       },
       "block_order": [
-        "comparison_row_1",
-        "comparison_row_2",
-        "comparison_row_3",
-        "comparison_row_4",
-        "comparison_row_5",
-        "comparison_row_6"
+        "comparison_row_PxpzCa",
+        "comparison_row_xwwanf",
+        "comparison_row_abFfgH",
+        "comparison_row_4zkip4",
+        "comparison_row_NqfP7X",
+        "comparison_row_WGFFe8"
       ],
-      "name": "t:sections.comparison_table.name",
+      "name": "t:sections.comparison_table.presets.name",
       "settings": {
-        "heading": "Why RelorGuard® is the Ultimate Snoring Solution",
+        "heading": "<strong>Why RelorGuard® is the Ultimate Snoring Solution</strong>",
         "heading_size": "h1",
         "product_name": "RelorGuard",
         "competitor_1": "Nose Strips",
         "competitor_2": "Pillows",
         "competitor_3": "Nasal Sprays",
         "competitor_4": "Mouth Tape",
-        "color_scheme": "scheme-1",
+        "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 52
+        "padding_bottom": 36
       }
     },
     "collapsible_content_UW4Ljd": {
@@ -502,36 +469,54 @@
         "collapsible_row_YYd9CQ": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How does RelorGuard stop snoring?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Relor Guard gently moves the lower jaw forward, stabilizes the tongue, widens the airway, and eliminates the vibration that causes snoring.</p>",
             "page": ""
           }
         },
         "collapsible_row_wm6i8j": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Is RelorGuard comfortable to wear?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Its ultra‑thin, medical‑grade design fits naturally in the mouth and feels comfortable after a short adjustment period.</p>",
             "page": ""
           }
         },
         "collapsible_row_hwrwRp": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How long does it take to get used to it?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Most users adapt within 2–4 nights as the jaw muscles get used to the forward position.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GkpQCd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it safe for daily use?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes — Relor Guard uses medical‑grade materials and follows the same airway‑support principles used in clinical mandibular advancement devices.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_idxcz6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can it help with mild sleep apnea?",
+            "icon": "check_mark",
+            "row_content": "<p>Mandibular advancement can support airflow in mild cases, but always consult a healthcare professional for diagnosis.</p>",
             "page": ""
           }
         },
         "collapsible_row_HcXfMR": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How do I clean Relor Guard?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Rinse with warm water and mild soap daily. Store it in the protective case to keep it hygienic and dry.</p>",
             "page": ""
           }
         }
@@ -540,12 +525,14 @@
         "collapsible_row_YYd9CQ",
         "collapsible_row_wm6i8j",
         "collapsible_row_hwrwRp",
+        "collapsible_row_GkpQCd",
+        "collapsible_row_idxcz6",
         "collapsible_row_HcXfMR"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
+        "heading": "Frequently Asked Questions",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
@@ -598,7 +585,7 @@
     "image_with_text_KhFa7A",
     "image_banner_4AnYhY",
     "rich_text_tEB9gA",
-    "comparison_table_R3gArD",
+    "comparison_table_3hdEgg",
     "collapsible_content_UW4Ljd",
     "disclosures",
     "related-products"
