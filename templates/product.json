@@ -153,7 +153,7 @@
         "heading_hLC7gj": {
           "type": "heading",
           "settings": {
-            "heading": "🔬 How Relor Guard Works",
+            "heading": "🔬 How RelorGuard Works",
             "heading_size": "h0"
           }
         }
@@ -451,7 +451,7 @@
       ],
       "name": "t:sections.comparison_table.presets.name",
       "settings": {
-        "heading": "Why RelorGuard® is the Ultimate Snoring Solution",
+        "heading": "<strong>Why RelorGuard® is the Ultimate Snoring Solution</strong>",
         "heading_size": "h1",
         "product_name": "RelorGuard",
         "competitor_1": "Nose Strips",
@@ -469,36 +469,54 @@
         "collapsible_row_YYd9CQ": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How does RelorGuard stop snoring?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Relor Guard gently moves the lower jaw forward, stabilizes the tongue, widens the airway, and eliminates the vibration that causes snoring.</p>",
             "page": ""
           }
         },
         "collapsible_row_wm6i8j": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Is RelorGuard comfortable to wear?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Its ultra‑thin, medical‑grade design fits naturally in the mouth and feels comfortable after a short adjustment period.</p>",
             "page": ""
           }
         },
         "collapsible_row_hwrwRp": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How long does it take to get used to it?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Most users adapt within 2–4 nights as the jaw muscles get used to the forward position.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GkpQCd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it safe for daily use?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes — Relor Guard uses medical‑grade materials and follows the same airway‑support principles used in clinical mandibular advancement devices.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_idxcz6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can it help with mild sleep apnea?",
+            "icon": "check_mark",
+            "row_content": "<p>Mandibular advancement can support airflow in mild cases, but always consult a healthcare professional for diagnosis.</p>",
             "page": ""
           }
         },
         "collapsible_row_HcXfMR": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How do I clean Relor Guard?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Rinse with warm water and mild soap daily. Store it in the protective case to keep it hygienic and dry.</p>",
             "page": ""
           }
         }
@@ -507,12 +525,14 @@
         "collapsible_row_YYd9CQ",
         "collapsible_row_wm6i8j",
         "collapsible_row_hwrwRp",
+        "collapsible_row_GkpQCd",
+        "collapsible_row_idxcz6",
         "collapsible_row_HcXfMR"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
+        "heading": "Frequently Asked Questions",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
