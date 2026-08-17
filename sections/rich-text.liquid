@@ -12,6 +12,10 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .rich-text__star {
+    color: #ffc107;
+  }
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
@@ -29,7 +33,10 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {{ block.settings.heading }}
+                {{
+                  block.settings.heading
+                  | replace: '★', '<span class="rich-text__star">★</span>'
+                }}
               </h2>
             {%- when 'caption' -%}
               <p
