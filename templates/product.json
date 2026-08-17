@@ -262,7 +262,7 @@
         "text_Ah3HWY": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Tongue stabilization is the quiet mechanism that makes RelorGuard stop snoring so effectively. When you fall asleep, the tongue naturally relaxes and tends to fall backward, narrowing the airway and creating vibration. RelorGuard gently moves the lower jaw forward, and because the tongue is attached to the jaw, it follows that movement — shifting slightly forward and staying stable instead of collapsing. With the tongue held in this supported position, the airway stays open, airflow becomes smooth, and the vibration that causes snoring disappears.</p>",
             "text_style": "body"
           }
         }
@@ -294,14 +294,14 @@
         "heading_cwefBM": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "<strong>Vibration Reduction</strong>",
             "heading_size": "h1"
           }
         },
         "text_NtKFb3": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Snoring happens when the airway becomes narrow and soft tissues begin to vibrate as air squeezes through. When Relor Guard gently moves the lower jaw forward, the tongue follows and the airway expands. With more space for air to move, the airflow becomes smooth instead of turbulent — and without turbulence, the tissues no longer vibrate. No vibration means no snoring, which is why breathing becomes quiet and effortless</p>",
             "text_style": "body"
           }
         },
@@ -321,7 +321,8 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "height": "adapt",
+        "image": "shopify://shop_images/hf_20260815_110938_5ed30bd1-89a0-4ab4-b63c-2410b35a6b5d.png",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "image_behavior": "none",
@@ -374,6 +375,92 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "comparison_table_3hdEgg": {
+      "type": "comparison-table",
+      "blocks": {
+        "comparison_row_PxpzCa": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Fixes the real cause of snoring",
+            "competitor_1": false,
+            "competitor_2": false,
+            "competitor_3": false,
+            "competitor_4": false
+          }
+        },
+        "comparison_row_xwwanf": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Keeps your airway open all night",
+            "competitor_1": false,
+            "competitor_2": false,
+            "competitor_3": false,
+            "competitor_4": false
+          }
+        },
+        "comparison_row_abFfgH": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Adjustable and comfortable",
+            "competitor_1": true,
+            "competitor_2": true,
+            "competitor_3": false,
+            "competitor_4": true
+          }
+        },
+        "comparison_row_4zkip4": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Works in any sleeping position",
+            "competitor_1": false,
+            "competitor_2": false,
+            "competitor_3": true,
+            "competitor_4": true
+          }
+        },
+        "comparison_row_NqfP7X": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Stays in place all night",
+            "competitor_1": false,
+            "competitor_2": false,
+            "competitor_3": true,
+            "competitor_4": true
+          }
+        },
+        "comparison_row_WGFFe8": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Drug-free and safe to use every night",
+            "competitor_1": true,
+            "competitor_2": true,
+            "competitor_3": false,
+            "competitor_4": false
+          }
+        }
+      },
+      "block_order": [
+        "comparison_row_PxpzCa",
+        "comparison_row_xwwanf",
+        "comparison_row_abFfgH",
+        "comparison_row_4zkip4",
+        "comparison_row_NqfP7X",
+        "comparison_row_WGFFe8"
+      ],
+      "name": "t:sections.comparison_table.presets.name",
+      "settings": {
+        "heading": "Why RelorGuard® is the Ultimate Snoring Solution",
+        "heading_size": "h1",
+        "product_name": "RelorGuard",
+        "competitor_1": "Nose Strips",
+        "competitor_2": "Pillows",
+        "competitor_3": "Nasal Sprays",
+        "competitor_4": "Mouth Tape",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collapsible_content_UW4Ljd": {
@@ -478,6 +565,7 @@
     "image_with_text_KhFa7A",
     "image_banner_4AnYhY",
     "rich_text_tEB9gA",
+    "comparison_table_3hdEgg",
     "collapsible_content_UW4Ljd",
     "disclosures",
     "related-products"
