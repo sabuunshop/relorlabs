@@ -252,7 +252,7 @@
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "relorguard-anti-snoring-mouthpiece",
-        "color_scheme": "",
+        "color_scheme": "scheme-row-blue-button",
         "secondary_background": false,
         "media_size": "medium",
         "constrain_to_viewport": true,
