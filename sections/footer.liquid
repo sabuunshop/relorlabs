@@ -42,6 +42,23 @@
   .footer-block__contact-line a {
     color: currentColor;
   }
+
+  .footer__disclaimer {
+    padding-top: 2.4rem;
+  }
+
+  .footer__disclaimer-content {
+    color: rgba(var(--color-foreground), 0.6);
+    max-width: 80rem;
+  }
+
+  .footer__disclaimer-content p {
+    margin: 0 0 1rem;
+  }
+
+  .footer__disclaimer-content p:last-child {
+    margin-bottom: 0;
+  }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -282,6 +299,14 @@
         </div>
       </div>
     {%- endunless -%}
+  {%- endif -%}
+
+  {%- if section.settings.medical_disclaimer != blank -%}
+    <div class="footer__disclaimer page-width">
+      <div class="footer__disclaimer-content rte caption">
+        {{ section.settings.medical_disclaimer }}
+      </div>
+    </div>
   {%- endif -%}
 
   <div
@@ -547,6 +572,16 @@
       "default": true,
       "label": "t:sections.footer.settings.show_policy.label",
       "info": "t:sections.footer.settings.show_policy.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.medical_disclaimer_header.content"
+    },
+    {
+      "type": "richtext",
+      "id": "medical_disclaimer",
+      "label": "t:sections.footer.settings.medical_disclaimer.label",
+      "info": "t:sections.footer.settings.medical_disclaimer.info"
     },
     {
       "type": "header",
