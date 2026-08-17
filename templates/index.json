@@ -65,9 +65,9 @@
       "type": "scrolling-banner",
       "name": "t:sections.scrolling_banner.name",
       "settings": {
-        "text": "Designed for your comfort, Open your airway. Silence the snoring. Sleep deeper tonight.",
-        "color_scheme": "scheme-2",
-        "speed": 30,
+        "text": "┃Designed for your comfort┃Open your airway┃Silence the snoring┃Sleep deeper tonight ┃",
+        "color_scheme": "scheme-5",
+        "speed": 100,
         "padding_top": 16,
         "padding_bottom": 16
       }
