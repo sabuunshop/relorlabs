@@ -24,14 +24,14 @@
 }
 
 .bundle-pricing__radio:checked ~ .bundle-pricing__card {
-  border-color: #334fb4;
+  border-color: #1b4b5c;
   border-width: 0.2rem;
-  background: rgba(51, 79, 180, 0.06);
+  background: rgba(27, 75, 92, 0.06);
   padding: 1.3rem 1.5rem;
 }
 
 .bundle-pricing__radio:focus-visible ~ .bundle-pricing__card {
-  outline: 0.2rem solid #334fb4;
+  outline: 0.2rem solid #1b4b5c;
   outline-offset: 0.2rem;
 }
 
@@ -84,7 +84,7 @@
 
 .bundle-pricing__badge {
   flex-shrink: 0;
-  color: #334fb4;
+  color: #1b4b5c;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -93,7 +93,7 @@
   display: block;
   margin-top: 1.2rem;
   padding-top: 1.2rem;
-  border-top: 0.1rem solid rgba(51, 79, 180, 0.2);
+  border-top: 0.1rem solid rgba(27, 75, 92, 0.2);
 }
 
 .bundle-pricing__perks ul {
@@ -111,7 +111,7 @@
 .bundle-pricing__perks .svg-wrapper {
   flex-shrink: 0;
   display: inline-flex;
-  color: #334fb4;
+  color: #1b4b5c;
 }
 
 .bundle-pricing__perks .svg-wrapper svg {
