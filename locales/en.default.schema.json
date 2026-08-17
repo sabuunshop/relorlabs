@@ -1074,6 +1074,13 @@
           "label": "Policy links",
           "info": "[Manage policies](/admin/settings/legal)"
         },
+        "medical_disclaimer_header": {
+          "content": "Medical disclaimer"
+        },
+        "medical_disclaimer": {
+          "label": "Medical disclaimer text",
+          "info": "Shown as a small full-width notice above the copyright line. Leave blank to hide."
+        },
         "margin_top": {
           "label": "Top margin"
         },
