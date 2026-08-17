@@ -45,7 +45,7 @@
             "tier_2_label": "RelorGuard 2x Mouthpiece",
             "tier_2_quantity": 2,
             "tier_2_discount": 15,
-            "tier_2_perks": "120-Days Snore Free\nFREE Shipping\nFREE Travel Case\nFREE Cleaning Brush\nFREE Ebook",
+            "tier_2_perks": "FREE Shipping\nFREE Travel Case\nFREE Cleaning Brush\nFREE Ebook",
             "tier_2_selected": true,
             "tier_3_label": "RelorGuard 3x Mouthpiece",
             "tier_3_quantity": 3,
@@ -308,7 +308,7 @@
         "button_U6AXQt": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false
           }
