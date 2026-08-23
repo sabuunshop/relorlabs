@@ -1,5 +1,5 @@
 {% comment %}
-  Renders a 3-tier quantity bundle selector with its own Add to Cart button.
+  Renders a 4-tier quantity bundle selector with its own Add to Cart button.
   Submits to the shared product form via the HTML `form` attribute, so it
   must be rendered on the same page as a `buy-buttons` block (hidden via
   CSS below) which owns the actual <form> and variant id input.
@@ -31,7 +31,7 @@
 {%- liquid
   assign variant = product.selected_or_first_available_variant
   assign unit_price = variant.price
-  assign tier_indexes = '1,3' | split: ','
+  assign tier_indexes = '1,2,3,4' | split: ','
   assign selected_tier = 1
 
   # Fallback in case no tier is marked "selected by default" in settings.
@@ -75,12 +75,17 @@
             assign tier_discount = block.settings.tier_3_discount
             assign tier_perks = block.settings.tier_3_perks
             assign tier_selected = block.settings.tier_3_selected
+          when '4'
+            assign tier_quantity = block.settings.tier_4_quantity
+            assign tier_label = block.settings.tier_4_label
+            assign tier_discount = block.settings.tier_4_discount
+            assign tier_perks = block.settings.tier_4_perks
+            assign tier_selected = block.settings.tier_4_selected
         endcase
 
         assign tier_original_total = unit_price | times: tier_quantity
         assign tier_discount_multiplier = 100 | minus: tier_discount
         assign tier_current_total = tier_original_total | times: tier_discount_multiplier | divided_by: 100.0 | round
-        assign tier_discount_rounded = tier_discount | round
 
         if tier_selected
           assign selected_tier = i
@@ -118,59 +123,36 @@
           {% endif %}
         >
         <span class="bundle-pricing__card">
+          {%- if tier_selected -%}
+            <span class="bundle-pricing__ribbon">{{- 'products.product.bundle_pricing.most_popular' | t -}}</span>
+          {%- endif -%}
           <span class="bundle-pricing__row">
-            {%- if product.featured_media != blank -%}
-              <span class="bundle-pricing__thumb">
-                {{-
-                  product.featured_media
-                  | image_url: width: 80
-                  | image_tag: loading: 'lazy', widths: '40, 80', sizes: '40px'
-                -}}
-              </span>
-            {%- endif -%}
+            <span class="bundle-pricing__radio-visual" aria-hidden="true"></span>
             <span class="bundle-pricing__info">
               <span class="bundle-pricing__label">{{ tier_label }}</span>
-              <span class="bundle-pricing__price">
-                <span class="bundle-pricing__price-current">
-                  {%- if settings.currency_code_enabled -%}
-                    {{- tier_current_total | money_with_currency -}}
-                  {%- else -%}
-                    {{- tier_current_total | money -}}
-                  {%- endif -%}
-                </span>
-                {%- if tier_discount > 0 -%}
-                  <s class="bundle-pricing__price-original">
-                    {%- if settings.currency_code_enabled -%}
-                      {{- tier_original_total | money_with_currency -}}
-                    {%- else -%}
-                      {{- tier_original_total | money -}}
-                    {%- endif -%}
-                  </s>
+              {%- if tier_perks != blank -%}
+                <span class="bundle-pricing__subtitle">{{ tier_perks | strip_newlines | strip }}</span>
+              {%- endif -%}
+            </span>
+            <span class="bundle-pricing__price">
+              <span class="bundle-pricing__price-current">
+                {%- if settings.currency_code_enabled -%}
+                  {{- tier_current_total | money_with_currency -}}
+                {%- else -%}
+                  {{- tier_current_total | money -}}
                 {%- endif -%}
               </span>
-            </span>
-            {%- if tier_discount > 0 -%}
-              <span class="bundle-pricing__badge">
-                {{- 'products.product.bundle_pricing.save' | t: percent: tier_discount_rounded -}}
-              </span>
-            {%- endif -%}
-          </span>
-          {%- if tier_perks != blank -%}
-            {%- assign tier_perk_lines = tier_perks | newline_to_br | split: '<br />' -%}
-            <span class="bundle-pricing__perks">
-              <ul class="list-unstyled">
-                {%- for perk in tier_perk_lines -%}
-                  {%- assign perk = perk | strip -%}
-                  {%- if perk != blank -%}
-                    <li>
-                      <span class="svg-wrapper">{{- 'icon-checkmark.svg' | inline_asset_content -}}</span>
-                      {{- perk -}}
-                    </li>
+              {%- if tier_discount > 0 -%}
+                <s class="bundle-pricing__price-original">
+                  {%- if settings.currency_code_enabled -%}
+                    {{- tier_original_total | money_with_currency -}}
+                  {%- else -%}
+                    {{- tier_original_total | money -}}
                   {%- endif -%}
-                {%- endfor -%}
-              </ul>
+                </s>
+              {%- endif -%}
             </span>
-          {%- endif -%}
+          </span>
         </span>
       </label>
     {%- endfor -%}
