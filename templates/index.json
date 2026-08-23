@@ -88,7 +88,7 @@
           "type": "column",
           "settings": {
             "title": "Orthodonist Inspired Design",
-            "text": "<p>RelorGuard is rooted in orthodontist-inspired design. Rather than forcing the jaw into a rigid, unnatural position, the appliance leverages biomechanical principles to gently advance the mandible while respecting your natural dental alignment.</p>",
+            "text": "<p>RelorGuard® is rooted in orthodontist-inspired design. Rather than forcing the jaw into a rigid, unnatural position, the appliance leverages biomechanical principles to gently advance the mandible while respecting your natural dental alignment.</p>",
             "link_label": "",
             "link": ""
           }
@@ -97,7 +97,7 @@
           "type": "column",
           "settings": {
             "title": "Custom Fit",
-            "text": "<p>RelorGuard uses advanced thermal-moldable technology to adapt seamlessly to your unique bite. Through a simple boil-and-bite process, it creates a secure, slip-free impression that stays in place all night.</p>",
+            "text": "<p>RelorGuard® uses advanced thermal-moldable technology to adapt seamlessly to your unique bite. Through a simple boil-and-bite process, it creates a secure, slip-free impression that stays in place all night.</p>",
             "link_label": "",
             "link": ""
           }
@@ -110,7 +110,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "The Relor Labs Standard",
+        "title": "Relor Labs® Standard",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -139,7 +139,7 @@
         "text_akgDkG": {
           "type": "text",
           "settings": {
-            "text": "<p>Snoring occurs when the muscles in your neck relax, causing your airway to narrow and vibrate. The RelorGuard utilizes Mandibular Advancement—a proven technique that gently holds your lower jaw slightly forward. This widens the airway, stops the vibration, and allows oxygen to flow freely.</p>",
+            "text": "<p>Snoring occurs when the muscles in your neck relax, causing your airway to narrow and vibrate. The RelorGuard® utilizes Mandibular Advancement—a proven technique that gently holds your lower jaw slightly forward. This widens the airway, stops the vibration, and allows oxygen to flow freely.</p>",
             "text_style": "body"
           }
         }
