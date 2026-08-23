@@ -46,12 +46,12 @@
             "tier_2_quantity": 2,
             "tier_2_discount": 15,
             "tier_2_perks": "FREE Shipping\nFREE Travel Case\nFREE Cleaning Brush\nFREE Ebook",
-            "tier_2_selected": true,
-            "tier_3_label": "RelorGuard 3x Mouthpiece",
+            "tier_2_selected": false,
+            "tier_3_label": "RelorGuard 3x Mouthpiece — Buy 1 Get 2 FREE",
             "tier_3_quantity": 3,
-            "tier_3_discount": 25,
-            "tier_3_perks": "",
-            "tier_3_selected": false,
+            "tier_3_discount": 66.67,
+            "tier_3_perks": "FREE Shipping\nFREE Travel Case\nFREE Cleaning Brush\nFREE Ebook",
+            "tier_3_selected": true,
             "trust_text": "Try It Risk-Free For 30 Nights"
           }
         },

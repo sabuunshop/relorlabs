@@ -31,13 +31,13 @@
 {%- liquid
   assign variant = product.selected_or_first_available_variant
   assign unit_price = variant.price
-  assign tier_indexes = '1,2,3' | split: ','
-  assign selected_tier = 2
+  assign tier_indexes = '1,3' | split: ','
+  assign selected_tier = 1
 
   # Fallback in case no tier is marked "selected by default" in settings.
-  assign selected_quantity = block.settings.tier_2_quantity
+  assign selected_quantity = block.settings.tier_1_quantity
   assign fallback_original_total = unit_price | times: selected_quantity
-  assign fallback_discount_multiplier = 100 | minus: block.settings.tier_2_discount
+  assign fallback_discount_multiplier = 100 | minus: block.settings.tier_1_discount
   assign fallback_current_total = fallback_original_total | times: fallback_discount_multiplier | divided_by: 100.0 | round
   if settings.currency_code_enabled
     assign selected_current_formatted = fallback_current_total | money_with_currency
@@ -80,6 +80,7 @@
         assign tier_original_total = unit_price | times: tier_quantity
         assign tier_discount_multiplier = 100 | minus: tier_discount
         assign tier_current_total = tier_original_total | times: tier_discount_multiplier | divided_by: 100.0 | round
+        assign tier_discount_rounded = tier_discount | round
 
         if tier_selected
           assign selected_tier = i
@@ -150,7 +151,7 @@
             </span>
             {%- if tier_discount > 0 -%}
               <span class="bundle-pricing__badge">
-                {{- 'products.product.bundle_pricing.save' | t: percent: tier_discount -}}
+                {{- 'products.product.bundle_pricing.save' | t: percent: tier_discount_rounded -}}
               </span>
             {%- endif -%}
           </span>
