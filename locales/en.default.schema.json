@@ -2092,6 +2092,9 @@
             "tier_3_header": {
               "content": "Tier 3"
             },
+            "tier_4_header": {
+              "content": "Tier 4"
+            },
             "footer_header": {
               "content": "Trust message"
             },
@@ -2106,11 +2109,11 @@
               "info": "Display only — this must match a real discount (e.g. an automatic quantity discount) or the price shown here won't match checkout."
             },
             "tier_perks": {
-              "label": "Perks (one per line)",
-              "info": "Shown only when this tier is selected. Leave blank for no perks list."
+              "label": "Subtitle",
+              "info": "Short line shown under the label, e.g. \"(2 Items) + Free Shipping\". Leave blank for none."
             },
             "tier_selected": {
-              "label": "Selected by default"
+              "label": "Selected by default (also shows the \"Most Popular\" ribbon)"
             },
             "trust_text": {
               "label": "Text"
