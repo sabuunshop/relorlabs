@@ -1995,6 +1995,44 @@
         }
       }
     },
+    "feature_highlights": {
+      "name": "Feature highlights",
+      "presets": {
+        "name": "Feature highlights"
+      },
+      "settings": {
+        "heading": {
+          "label": "Heading"
+        },
+        "subheading": {
+          "label": "Subheading"
+        },
+        "button_label": {
+          "label": "Button label"
+        },
+        "button_link": {
+          "label": "Button link",
+          "info": "Leave blank to disable the button."
+        }
+      },
+      "blocks": {
+        "feature": {
+          "name": "Feature",
+          "settings": {
+            "icon": {
+              "label": "Icon",
+              "info": "Name of an icon from the theme's icon set, e.g. \"leaf\", \"clipboard\", \"return\", \"ruler\", \"fire\". Leave blank for no icon."
+            },
+            "heading": {
+              "label": "Heading"
+            },
+            "text": {
+              "label": "Text"
+            }
+          }
+        }
+      }
+    },
     "policy_page": {
       "name": "Policy page",
       "settings": {
