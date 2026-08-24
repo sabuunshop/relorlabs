@@ -152,6 +152,69 @@
         "padding_bottom": 36
       }
     },
+    "feature_highlights_relor1": {
+      "type": "feature-highlights",
+      "blocks": {
+        "feature_thin": {
+          "type": "feature",
+          "settings": {
+            "icon": "ruler",
+            "heading": "Ultra-Thin, Comfortable Fit",
+            "text": "Slim, low-profile design sits naturally in your mouth so you forget you're wearing it."
+          }
+        },
+        "feature_design": {
+          "type": "feature",
+          "settings": {
+            "icon": "clipboard",
+            "heading": "Orthodontist-Inspired Design",
+            "text": "Uses gentle Mandibular Advancement to hold your jaw comfortably forward — no rigid locking, no restricted breathing."
+          }
+        },
+        "feature_material": {
+          "type": "feature",
+          "settings": {
+            "icon": "leaf",
+            "heading": "100% Medical-Grade, BPA-Free",
+            "text": "Made from non-toxic, allergy-safe thermoplastic. Easy to clean and safe for nightly use."
+          }
+        },
+        "feature_fit": {
+          "type": "feature",
+          "settings": {
+            "icon": "fire",
+            "heading": "Custom Boil-and-Bite Fit",
+            "text": "A simple boil-and-bite process molds RelorGuard to your unique bite for a secure, slip-free fit."
+          }
+        },
+        "feature_guarantee": {
+          "type": "feature",
+          "settings": {
+            "icon": "return",
+            "heading": "30-Day Risk-Free Guarantee",
+            "text": "Try RelorGuard for 30 nights. If you're not 100% satisfied, return it for a full refund."
+          }
+        }
+      },
+      "block_order": [
+        "feature_thin",
+        "feature_design",
+        "feature_material",
+        "feature_fit",
+        "feature_guarantee"
+      ],
+      "name": "t:sections.feature_highlights.presets.name",
+      "settings": {
+        "heading": "RelorGuard&reg; Anti-Snoring Mouthpiece",
+        "heading_size": "h1",
+        "subheading": "Over <strong>2,600+</strong> Happy Customers!",
+        "button_label": "Get 50% Off Today",
+        "button_link": "#MainProduct-main",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "rich_text_Mb4MNR": {
       "type": "rich-text",
       "blocks": {
@@ -583,6 +646,7 @@
   "order": [
     "main",
     "image_with_text_citEVp",
+    "feature_highlights_relor1",
     "rich_text_Mb4MNR",
     "image_with_text_iY7VDm",
     "image_with_text_J7pL8M",
