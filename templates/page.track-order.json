@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "main": {
+      "type": "order-tracking",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "icon": "cart",
+            "heading": "Order Placed",
+            "text": "You'll receive an order confirmation email right away."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "icon": "box",
+            "heading": "Processing",
+            "text": "Your order is prepared and packed, usually within 1-2 business days."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "icon": "truck",
+            "heading": "Shipped",
+            "text": "You'll get a shipping confirmation email with your tracking number."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "icon": "success",
+            "heading": "Delivered",
+            "text": "Your RelorGuard arrives at your door, ready for a quieter night's sleep."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "settings": {
+        "heading": "Track Your Order",
+        "heading_size": "h1",
+        "subheading": "<p>Enter your order details below to see the latest status, or sign in to view tracking for all your orders.</p>",
+        "button_label": "Track My Order",
+        "button_link": "https://account.relorlabs.com/orders",
+        "support_text": "<p>Can't find your tracking info? Check the shipping confirmation email sent to the address you used at checkout (don't forget to check spam). Still stuck? Email us at <a href=\"mailto:relorgroup@gmail.com\">relorgroup@gmail.com</a>.</p>",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

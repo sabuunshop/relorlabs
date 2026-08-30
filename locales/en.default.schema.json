@@ -2033,6 +2033,47 @@
         }
       }
     },
+    "order_tracking": {
+      "name": "Order tracking",
+      "presets": {
+        "name": "Order tracking"
+      },
+      "settings": {
+        "heading": {
+          "label": "Heading"
+        },
+        "subheading": {
+          "label": "Subheading"
+        },
+        "button_label": {
+          "label": "Button label"
+        },
+        "button_link": {
+          "label": "Button link",
+          "info": "Where the \"Track My Order\" button sends customers, e.g. your customer account orders page."
+        },
+        "support_text": {
+          "label": "Support text"
+        }
+      },
+      "blocks": {
+        "step": {
+          "name": "Step",
+          "settings": {
+            "icon": {
+              "label": "Icon",
+              "info": "Name of an icon from the theme's icon set, e.g. \"cart\", \"box\", \"truck\", \"success\". Leave blank for no icon."
+            },
+            "heading": {
+              "label": "Heading"
+            },
+            "text": {
+              "label": "Text"
+            }
+          }
+        }
+      }
+    },
     "policy_page": {
       "name": "Policy page",
       "settings": {
