@@ -219,6 +219,17 @@
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
+      },
+      "scheme-teal-banner": {
+        "settings": {
+          "background": "#1b4b5c",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#1b4b5c",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
       }
     }
   },
