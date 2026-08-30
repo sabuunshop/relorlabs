@@ -1,0 +1,496 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "bundle_pricing": {
+          "type": "bundle_pricing",
+          "settings": {
+            "tier_1_label": "Buy 1",
+            "tier_1_quantity": 1,
+            "tier_1_discount": 0,
+            "tier_1_perks": "",
+            "tier_1_selected": false,
+            "tier_2_label": "Buy 1 Get 1 Free",
+            "tier_2_quantity": 2,
+            "tier_2_discount": 50,
+            "tier_2_perks": "(2 Items) + Free Shipping",
+            "tier_2_selected": true,
+            "tier_3_label": "Buy 2 Get 2 Free",
+            "tier_3_quantity": 4,
+            "tier_3_discount": 50,
+            "tier_3_perks": "(4 Items) + Free Shipping",
+            "tier_3_selected": false,
+            "tier_4_label": "Buy 3 Get 3 Free",
+            "tier_4_quantity": 6,
+            "tier_4_discount": 50,
+            "tier_4_perks": "(6 Items) + Free Shipping",
+            "tier_4_selected": false,
+            "trust_text": "Try It Risk-Free For 30 Nights"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "bundle_pricing",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "image_with_text_rsLock": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rsLockh": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Lock In Nasal Breathing</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_rsLockt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mouth breathing during sleep bypasses your body's natural filtration system, leading to snoring, dry mouth, and fragmented rest. RelorStrip gently secures your lips closed, naturally driving oxygen through your expanded nasal airway all night long.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rsLockh",
+        "text_rsLockt"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Product_Image_22.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-row-blue-button",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_rsPair": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rsPairh": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Complete Your Nasal-Breathing System</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_rsPairt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>RelorStrip trains your body to breathe through your nose — but a restricted nasal airway can make that hard to sustain. Pair it with RelorFlow® to gently expand your nasal passages, so the breath RelorStrip encourages has an open, unrestricted path all night.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_rsPairb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop RelorFlow®",
+            "button_link": "shopify://products/relorflow-nasal-dilator",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rsPairh",
+        "text_rsPairt",
+        "button_rsPairb"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Product_Image_21.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "feature_highlights_relorstrip1": {
+      "type": "feature-highlights",
+      "blocks": {
+        "feature_adhesive": {
+          "type": "feature",
+          "settings": {
+            "icon": "leaf",
+            "heading": "Hypoallergenic Adhesive",
+            "text": "Medical-grade, latex-free backing engineered specifically for sensitive facial skin, for a safe, residue-free release every morning."
+          }
+        },
+        "feature_mesh": {
+          "type": "feature",
+          "settings": {
+            "icon": "snowflake",
+            "heading": "Breathable Woven Mesh",
+            "text": "Micro-porous fabric allows for trace airflow and moisture wicking, preventing sweat buildup and discomfort around the lips."
+          }
+        },
+        "feature_shape": {
+          "type": "feature",
+          "settings": {
+            "icon": "ruler",
+            "heading": "Ergonomic Pre-Cut Shape",
+            "text": "Anatomically contoured to comfortably stretch and flex with your facial muscles without losing its seal."
+          }
+        },
+        "feature_pouch": {
+          "type": "feature",
+          "settings": {
+            "icon": "padlock",
+            "heading": "Resealable Foil Pouch",
+            "text": "The airtight stand-up bag protects each strip from bathroom humidity, preserving adhesive strength and hygiene."
+          }
+        },
+        "feature_removal": {
+          "type": "feature",
+          "settings": {
+            "icon": "heart",
+            "heading": "Pain-Free Removal",
+            "text": "Secure hold all night, with a gentle, comfortable release in the morning — no irritation, no painful peeling."
+          }
+        }
+      },
+      "block_order": [
+        "feature_adhesive",
+        "feature_mesh",
+        "feature_shape",
+        "feature_pouch",
+        "feature_removal"
+      ],
+      "name": "t:sections.feature_highlights.presets.name",
+      "settings": {
+        "heading": "RelorStrip&reg; Sleep Tape",
+        "heading_size": "h1",
+        "subheading": "Lock In Nasal Breathing. Wake Up Restored.",
+        "button_label": "Get Yours Today",
+        "button_link": "#MainProduct-main",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_rsInfographic": {
+      "type": "image-banner",
+      "blocks": {},
+      "block_order": [],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Product_Image_23.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_with_text_rsHowTo": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rsHowToh": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>How to Use</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_rsHowTot": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wash and thoroughly dry your face to remove skin oils or moisturizers. Peel a single strip from the protective backing, gently roll your lips inward slightly, and apply the tape horizontally across the center of your mouth to create a secure, comfortable seal.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rsHowToh",
+        "text_rsHowTot"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ProductImage_19.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "comparison_table_relorstrip": {
+      "type": "comparison-table",
+      "blocks": {
+        "comparison_row_rs1": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Hypoallergenic, latex-free adhesive",
+            "competitor_1": false,
+            "competitor_2": true,
+            "competitor_3": true,
+            "competitor_4": true
+          }
+        },
+        "comparison_row_rs2": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Resealable, moisture-proof pouch",
+            "competitor_1": false,
+            "competitor_2": false,
+            "competitor_3": false,
+            "competitor_4": false
+          }
+        },
+        "comparison_row_rs3": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Comfortable, all-night hold",
+            "competitor_1": false,
+            "competitor_2": false,
+            "competitor_3": true,
+            "competitor_4": true
+          }
+        },
+        "comparison_row_rs4": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Encourages full nasal breathing",
+            "competitor_1": true,
+            "competitor_2": true,
+            "competitor_3": false,
+            "competitor_4": false
+          }
+        },
+        "comparison_row_rs5": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Pain-free, residue-free removal",
+            "competitor_1": false,
+            "competitor_2": true,
+            "competitor_3": false,
+            "competitor_4": true
+          }
+        }
+      },
+      "block_order": [
+        "comparison_row_rs1",
+        "comparison_row_rs2",
+        "comparison_row_rs3",
+        "comparison_row_rs4",
+        "comparison_row_rs5"
+      ],
+      "name": "t:sections.comparison_table.presets.name",
+      "settings": {
+        "heading": "<strong>Why RelorStrip® is the Better Sleep Tape</strong>",
+        "heading_size": "h1",
+        "product_name": "RelorStrip",
+        "competitor_1": "Other Mouth Tapes",
+        "competitor_2": "Chin Straps",
+        "competitor_3": "Nasal Strips",
+        "competitor_4": "Do Nothing",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_relorstrip": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_rs1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does RelorStrip work?",
+            "icon": "check_mark",
+            "row_content": "<p>RelorStrip gently secures your lips closed during sleep, naturally redirecting your breathing through your nose instead of your mouth.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rs2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is RelorStrip safe for sensitive skin?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes. RelorStrip uses a medical-grade, latex-free, hypoallergenic adhesive designed specifically for sensitive facial skin, with a residue-free release every morning.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rs3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I apply RelorStrip?",
+            "icon": "check_mark",
+            "row_content": "<p>Wash and thoroughly dry your face, peel a strip from the backing, gently roll your lips inward slightly, and apply it horizontally across the center of your mouth.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rs4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use RelorStrip with RelorFlow?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes — they work together perfectly. RelorStrip encourages nasal breathing by gently closing the mouth, while RelorFlow keeps your nasal airway open so that breath flows freely.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rs5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How should I store RelorStrip?",
+            "icon": "check_mark",
+            "row_content": "<p>Keep unused strips in the resealable, moisture-locking foil pouch to preserve adhesive strength and hygiene from the first night to the last.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_rs1",
+        "collapsible_row_rs2",
+        "collapsible_row_rs3",
+        "collapsible_row_rs4",
+        "collapsible_row_rs5"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "disclosures": {
+      "type": "disclosures",
+      "settings": {
+        "heading": "Disclosures",
+        "heading_size": "h2",
+        "open_by_default": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_rsLock",
+    "feature_highlights_relorstrip1",
+    "image_banner_rsInfographic",
+    "image_with_text_rsHowTo",
+    "image_with_text_rsPair",
+    "comparison_table_relorstrip",
+    "collapsible_content_relorstrip",
+    "disclosures",
+    "related-products"
+  ]
+}
