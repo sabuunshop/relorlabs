@@ -27,6 +27,32 @@
           "type": "price",
           "settings": {}
         },
+        "bundle_pricing": {
+          "type": "bundle_pricing",
+          "settings": {
+            "tier_1_label": "Buy 1",
+            "tier_1_quantity": 1,
+            "tier_1_discount": 0,
+            "tier_1_perks": "",
+            "tier_1_selected": false,
+            "tier_2_label": "Buy 1 Get 1 Free",
+            "tier_2_quantity": 2,
+            "tier_2_discount": 50,
+            "tier_2_perks": "(2 Items) + Free Shipping",
+            "tier_2_selected": true,
+            "tier_3_label": "Buy 2 Get 2 Free",
+            "tier_3_quantity": 4,
+            "tier_3_discount": 50,
+            "tier_3_perks": "(4 Items) + Free Shipping",
+            "tier_3_selected": false,
+            "tier_4_label": "Buy 3 Get 3 Free",
+            "tier_4_quantity": 6,
+            "tier_4_discount": 50,
+            "tier_4_perks": "(6 Items) + Free Shipping",
+            "tier_4_selected": false,
+            "trust_text": "Try It Risk-Free For 30 Nights"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -49,6 +75,7 @@
         "vendor",
         "title",
         "price",
+        "bundle_pricing",
         "buy_buttons",
         "description",
         "share"
