@@ -96,6 +96,45 @@
         "padding_bottom": 12
       }
     },
+    "image_with_text_rfMechanism": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rfMechh": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>How RelorFlow Opens Your Airway</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_rfMecht": {
+          "type": "text",
+          "settings": {
+            "text": "<p>RelorFlow gently expands the nasal passages from the inside, widening the internal airway so air can travel freely from your nose, down through your throat, and into your lungs. By reducing resistance at the source, it increases airflow volume and cuts down the nasal vibration that causes snoring.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rfMechh",
+        "text_rfMecht"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/hf_20260830_164829_05024c09-031d-4ce7-9efc-26fe06cd0465.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_rfDual1": {
       "type": "image-with-text",
       "blocks": {
@@ -425,6 +464,7 @@
   },
   "order": [
     "main",
+    "image_with_text_rfMechanism",
     "image_with_text_rfDual1",
     "feature_highlights_relorflow1",
     "image_with_text_rfHowTo",
