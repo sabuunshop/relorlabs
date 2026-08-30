@@ -273,7 +273,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
+        "collection": "all-products",
         "products_to_show": 8,
         "title": "Shop Our Best Sellers",
         "heading_size": "h2",
