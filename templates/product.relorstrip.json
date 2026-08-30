@@ -120,7 +120,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ProductImage_19.png",
+        "image": "shopify://shop_images/Product_Image_22.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -244,6 +244,25 @@
         "color_scheme": "scheme-1",
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "image_banner_rsInfographic": {
+      "type": "image-banner",
+      "blocks": {},
+      "block_order": [],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Product_Image_23.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
       }
     },
     "image_with_text_rsHowTo": {
@@ -466,6 +485,7 @@
     "main",
     "image_with_text_rsLock",
     "feature_highlights_relorstrip1",
+    "image_banner_rsInfographic",
     "image_with_text_rsHowTo",
     "image_with_text_rsPair",
     "comparison_table_relorstrip",
