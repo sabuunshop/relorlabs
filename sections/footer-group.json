@@ -35,6 +35,13 @@
             "menu": "footer"
           }
         },
+        "eu-legal-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "EU Legal",
+            "menu": "eu-legal"
+          }
+        },
         "contact-1": {
           "type": "contact_info",
           "settings": {
@@ -48,6 +55,7 @@
         "about-1",
         "menu-1",
         "info-1",
+        "eu-legal-1",
         "contact-1"
       ],
       "settings": {
