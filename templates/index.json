@@ -13,7 +13,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Untitled_design_17.png",
+        "image": "shopify://shop_images/Banners_Images_2.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
