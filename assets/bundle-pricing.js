@@ -18,16 +18,27 @@ if (!customElements.get('bundle-pricing')) {
 
         const form = document.getElementById(this.dataset.formId);
         if (form) {
+          this.variantIdInput = form.querySelector('.product-variant-id');
           form.addEventListener('submit', this.onFormSubmit.bind(this));
         }
+
+        // Ensure the form submits the variant matching whichever tier is
+        // selected by default on page load, not just the product's first variant.
+        const checkedRadio = this.radios.find((radio) => radio.checked);
+        if (checkedRadio) this.applyTier(checkedRadio);
       }
 
       onTierChange(event) {
-        const radio = event.target;
+        this.applyTier(event.target);
+      }
 
+      applyTier(radio) {
         if (this.quantityInput) this.quantityInput.value = radio.value;
         if (this.priceEl) this.priceEl.textContent = radio.dataset.currentFormatted || '';
         if (this.originalEl) this.originalEl.textContent = radio.dataset.originalFormatted || '';
+        if (this.variantIdInput && radio.dataset.variantId) {
+          this.variantIdInput.value = radio.dataset.variantId;
+        }
       }
 
       onFormSubmit() {
