@@ -36,6 +36,7 @@
 
   # Fallback in case no tier is marked "selected by default" in settings.
   assign selected_quantity = block.settings.tier_1_quantity
+  assign selected_submit_quantity = block.settings.tier_1_quantity
   assign fallback_original_total = unit_price | times: selected_quantity
   assign fallback_discount_multiplier = 100 | minus: block.settings.tier_1_discount
   assign fallback_current_total = fallback_original_total | times: fallback_discount_multiplier | divided_by: 100.0 | round
@@ -63,29 +64,55 @@
             assign tier_discount = block.settings.tier_1_discount
             assign tier_perks = block.settings.tier_1_perks
             assign tier_selected = block.settings.tier_1_selected
+            assign tier_option_value = block.settings.tier_1_option_value
           when '2'
             assign tier_quantity = block.settings.tier_2_quantity
             assign tier_label = block.settings.tier_2_label
             assign tier_discount = block.settings.tier_2_discount
             assign tier_perks = block.settings.tier_2_perks
             assign tier_selected = block.settings.tier_2_selected
+            assign tier_option_value = block.settings.tier_2_option_value
           when '3'
             assign tier_quantity = block.settings.tier_3_quantity
             assign tier_label = block.settings.tier_3_label
             assign tier_discount = block.settings.tier_3_discount
             assign tier_perks = block.settings.tier_3_perks
             assign tier_selected = block.settings.tier_3_selected
+            assign tier_option_value = block.settings.tier_3_option_value
           when '4'
             assign tier_quantity = block.settings.tier_4_quantity
             assign tier_label = block.settings.tier_4_label
             assign tier_discount = block.settings.tier_4_discount
             assign tier_perks = block.settings.tier_4_perks
             assign tier_selected = block.settings.tier_4_selected
+            assign tier_option_value = block.settings.tier_4_option_value
         endcase
 
         assign tier_original_total = unit_price | times: tier_quantity
         assign tier_discount_multiplier = 100 | minus: tier_discount
         assign tier_current_total = tier_original_total | times: tier_discount_multiplier | divided_by: 100.0 | round
+
+        # Default: submit the base variant with quantity = pack size.
+        assign tier_variant_id = variant.id
+        assign tier_submit_quantity = tier_quantity
+
+        # When a tier is mapped to a real variant (matched by option value,
+        # e.g. a supplier-provided "2PC" / "4pcs" pack SKU), submit that
+        # variant directly with quantity 1 instead, so orders and inventory
+        # reflect the correct pack SKU rather than N units of the base variant.
+        # The displayed price is also switched to that variant's real price,
+        # since that's what actually gets charged at checkout regardless of
+        # what the discount setting above would otherwise compute.
+        if tier_option_value != blank
+          for tier_candidate_variant in product.variants
+            if tier_candidate_variant.option1 == tier_option_value or tier_candidate_variant.option2 == tier_option_value or tier_candidate_variant.option3 == tier_option_value
+              assign tier_variant_id = tier_candidate_variant.id
+              assign tier_submit_quantity = 1
+              assign tier_current_total = tier_candidate_variant.price
+              break
+            endif
+          endfor
+        endif
 
         if tier_selected
           assign selected_tier = i
@@ -108,6 +135,7 @@
           assign selected_current_formatted = tier_current_formatted
           assign selected_original_formatted = tier_original_formatted_or_blank
           assign selected_quantity = tier_quantity
+          assign selected_submit_quantity = tier_submit_quantity
         endif
       -%}
       <label class="bundle-pricing__tier">
@@ -115,9 +143,10 @@
           type="radio"
           class="bundle-pricing__radio visually-hidden"
           name="BundleTier-{{ section.id }}"
-          value="{{ tier_quantity }}"
+          value="{{ tier_submit_quantity }}"
           data-current-formatted="{{ tier_current_formatted }}"
           data-original-formatted="{{ tier_original_formatted_or_blank }}"
+          data-variant-id="{{ tier_variant_id }}"
           {% if tier_selected %}
             checked
           {% endif %}
@@ -163,7 +192,7 @@
     name="quantity"
     form="{{ product_form_id }}"
     class="bundle-pricing__quantity-input"
-    value="{{ selected_quantity }}"
+    value="{{ selected_submit_quantity }}"
   >
 
   <button

@@ -2180,6 +2180,10 @@
             "tier_label": {
               "label": "Label"
             },
+            "tier_option_value": {
+              "label": "Matching variant option value",
+              "info": "Optional. If this tier corresponds to a real product variant (e.g. a supplier-provided \"2PC\" or \"4pcs\" pack), enter that option value exactly as it appears on the variant. Selecting this tier will then add that variant (quantity 1) instead of multiple units of the base variant. Leave blank to keep the old quantity-based behavior."
+            },
             "tier_quantity": {
               "label": "Quantity"
             },
