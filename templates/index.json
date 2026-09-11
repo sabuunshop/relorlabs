@@ -181,10 +181,6 @@
             "heading_size": "h1"
           }
         },
-        "price_cPaBUj": {
-          "type": "price",
-          "settings": {}
-        },
         "bundle_pricing_pmh3TC": {
           "type": "bundle_pricing",
           "settings": {
@@ -244,7 +240,6 @@
       "block_order": [
         "text_4fcdbA",
         "title_YnFYBa",
-        "price_cPaBUj",
         "bundle_pricing_pmh3TC",
         "icon_with_text_3xwgg4",
         "buy_buttons_xU73CU",
