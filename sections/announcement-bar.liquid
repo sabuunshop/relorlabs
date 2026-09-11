@@ -1,7 +1,5 @@
-{%- if section.blocks.size > 1 -%}
-  {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
-  {{ 'component-slider.css' | asset_url | stylesheet_tag }}
-{%- endif -%}
+{{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign social_icons = true
