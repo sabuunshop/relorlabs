@@ -216,53 +216,55 @@
           assign selected_submit_quantity = tier_submit_quantity
         endif
       -%}
-      <label class="bundle-pricing__tier">
-        <input
-          type="radio"
-          class="bundle-pricing__radio visually-hidden"
-          name="BundleTier-{{ section.id }}"
-          value="{{ tier_submit_quantity }}"
-          data-onetime-formatted="{{ tier_current_formatted }}"
-          data-subscribe-formatted="{{ tier_subscribe_formatted }}"
-          data-original-formatted="{{ tier_original_formatted_or_blank }}"
-          data-variant-id="{{ tier_variant_id }}"
-          {% if tier_selected %}
-            checked
-          {% endif %}
-        >
-        <span class="bundle-pricing__card">
-          {%- if tier_selected -%}
-            <span class="bundle-pricing__ribbon">{{- 'products.product.bundle_pricing.most_popular' | t -}}</span>
-          {%- endif -%}
-          <span class="bundle-pricing__row">
-            <span class="bundle-pricing__radio-visual" aria-hidden="true"></span>
-            <span class="bundle-pricing__info">
-              <span class="bundle-pricing__label">{{ tier_label }}</span>
-              {%- if tier_perks != blank -%}
-                <span class="bundle-pricing__subtitle">{{ tier_perks | strip_newlines | strip }}</span>
-              {%- endif -%}
-            </span>
-            <span class="bundle-pricing__price">
-              <span class="bundle-pricing__price-current">
-                {%- if settings.currency_code_enabled -%}
-                  {{- tier_current_total | money_with_currency -}}
-                {%- else -%}
-                  {{- tier_current_total | money -}}
+      {%- if tier_quantity != blank and tier_quantity > 0 -%}
+        <label class="bundle-pricing__tier">
+          <input
+            type="radio"
+            class="bundle-pricing__radio visually-hidden"
+            name="BundleTier-{{ section.id }}"
+            value="{{ tier_submit_quantity }}"
+            data-onetime-formatted="{{ tier_current_formatted }}"
+            data-subscribe-formatted="{{ tier_subscribe_formatted }}"
+            data-original-formatted="{{ tier_original_formatted_or_blank }}"
+            data-variant-id="{{ tier_variant_id }}"
+            {% if tier_selected %}
+              checked
+            {% endif %}
+          >
+          <span class="bundle-pricing__card">
+            {%- if tier_selected -%}
+              <span class="bundle-pricing__ribbon">{{- 'products.product.bundle_pricing.most_popular' | t -}}</span>
+            {%- endif -%}
+            <span class="bundle-pricing__row">
+              <span class="bundle-pricing__radio-visual" aria-hidden="true"></span>
+              <span class="bundle-pricing__info">
+                <span class="bundle-pricing__label">{{ tier_label }}</span>
+                {%- if tier_perks != blank -%}
+                  <span class="bundle-pricing__subtitle">{{ tier_perks | strip_newlines | strip }}</span>
                 {%- endif -%}
               </span>
-              {%- if tier_discount > 0 -%}
-                <s class="bundle-pricing__price-original">
+              <span class="bundle-pricing__price">
+                <span class="bundle-pricing__price-current">
                   {%- if settings.currency_code_enabled -%}
-                    {{- tier_original_total | money_with_currency -}}
+                    {{- tier_current_total | money_with_currency -}}
                   {%- else -%}
-                    {{- tier_original_total | money -}}
+                    {{- tier_current_total | money -}}
                   {%- endif -%}
-                </s>
-              {%- endif -%}
+                </span>
+                {%- if tier_discount > 0 -%}
+                  <s class="bundle-pricing__price-original">
+                    {%- if settings.currency_code_enabled -%}
+                      {{- tier_original_total | money_with_currency -}}
+                    {%- else -%}
+                      {{- tier_original_total | money -}}
+                    {%- endif -%}
+                  </s>
+                {%- endif -%}
+              </span>
             </span>
           </span>
-        </span>
-      </label>
+        </label>
+      {%- endif -%}
     {%- endfor -%}
   </div>
 
