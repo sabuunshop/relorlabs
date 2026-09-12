@@ -34,6 +34,29 @@
   assign tier_indexes = '1,2,3,4' | split: ','
   assign selected_tier = 1
 
+  # Subscribe & Save: only rendered when the product has an active selling
+  # plan (created via a subscriptions app, e.g. Shopify Subscriptions).
+  # Nothing to configure here — the toggle appears automatically once a
+  # selling plan exists on the product, and stays hidden otherwise.
+  assign has_selling_plans = false
+  assign selling_plan_id = ''
+  assign selling_plan_percent_off = 0
+  if product.selling_plan_groups.size > 0
+    assign selling_plan_group = product.selling_plan_groups.first
+    assign selling_plan = selling_plan_group.selling_plans.first
+    if selling_plan
+      assign has_selling_plans = true
+      assign selling_plan_id = selling_plan.id
+      for adjustment in selling_plan.price_adjustments
+        if adjustment.value_type == 'percentage'
+          assign selling_plan_percent_off = adjustment.value | times: 1
+        endif
+      endfor
+    endif
+  endif
+  assign subscribe_multiplier = 100 | minus: selling_plan_percent_off
+  assign subscribe_subtitle = block.settings.subscribe_subtitle | default: 'Ships every month. Skip or cancel anytime.'
+
   # Fallback in case no tier is marked "selected by default" in settings.
   assign selected_quantity = block.settings.tier_1_quantity
   assign selected_submit_quantity = block.settings.tier_1_quantity
@@ -54,6 +77,57 @@
   data-form-id="{{ product_form_id }}"
   {{ block.shopify_attributes }}
 >
+  {%- if has_selling_plans -%}
+    <div
+      class="bundle-pricing__purchase-toggle"
+      role="radiogroup"
+      aria-label="{{ 'products.product.bundle_pricing.purchase_options' | t }}"
+    >
+      <label class="bundle-pricing__purchase-choice">
+        <input
+          type="radio"
+          class="bundle-pricing__purchase-radio visually-hidden"
+          name="PurchaseOption-{{ section.id }}"
+          value="onetime"
+          checked
+        >
+        <span class="bundle-pricing__purchase-card">
+          <span class="bundle-pricing__radio-visual" aria-hidden="true"></span>
+          <span class="bundle-pricing__purchase-info">
+            <span class="bundle-pricing__purchase-label">
+              {{- 'products.product.bundle_pricing.one_time_purchase' | t -}}
+            </span>
+          </span>
+        </span>
+      </label>
+      <label class="bundle-pricing__purchase-choice">
+        <input
+          type="radio"
+          class="bundle-pricing__purchase-radio visually-hidden"
+          name="PurchaseOption-{{ section.id }}"
+          value="subscribe"
+          data-selling-plan-id="{{ selling_plan_id }}"
+        >
+        <span class="bundle-pricing__purchase-card">
+          <span class="bundle-pricing__radio-visual" aria-hidden="true"></span>
+          <span class="bundle-pricing__purchase-info">
+            <span class="bundle-pricing__purchase-label">
+              {{- 'products.product.bundle_pricing.subscribe_and_save' | t: percent: selling_plan_percent_off -}}
+            </span>
+            <span class="bundle-pricing__purchase-subtitle">{{ subscribe_subtitle }}</span>
+          </span>
+        </span>
+      </label>
+    </div>
+    <input
+      type="hidden"
+      name="selling_plan"
+      form="{{ product_form_id }}"
+      class="bundle-pricing__selling-plan-input"
+      value=""
+    >
+  {%- endif -%}
+
   <div class="bundle-pricing__tiers" role="radiogroup">
     {%- for i in tier_indexes -%}
       {%- liquid
@@ -118,12 +192,16 @@
           assign selected_tier = i
         endif
 
+        assign tier_subscribe_total = tier_current_total | times: subscribe_multiplier | divided_by: 100.0 | round
+
         if settings.currency_code_enabled
           assign tier_current_formatted = tier_current_total | money_with_currency
           assign tier_original_formatted = tier_original_total | money_with_currency
+          assign tier_subscribe_formatted = tier_subscribe_total | money_with_currency
         else
           assign tier_current_formatted = tier_current_total | money
           assign tier_original_formatted = tier_original_total | money
+          assign tier_subscribe_formatted = tier_subscribe_total | money
         endif
 
         assign tier_original_formatted_or_blank = ''
@@ -144,7 +222,8 @@
           class="bundle-pricing__radio visually-hidden"
           name="BundleTier-{{ section.id }}"
           value="{{ tier_submit_quantity }}"
-          data-current-formatted="{{ tier_current_formatted }}"
+          data-onetime-formatted="{{ tier_current_formatted }}"
+          data-subscribe-formatted="{{ tier_subscribe_formatted }}"
           data-original-formatted="{{ tier_original_formatted_or_blank }}"
           data-variant-id="{{ tier_variant_id }}"
           {% if tier_selected %}

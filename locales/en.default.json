@@ -118,7 +118,11 @@
       "add_to_cart": "Add to cart",
       "bundle_pricing": {
         "save": "Save {{ percent }}%",
-        "most_popular": "Most Popular"
+        "most_popular": "Most Popular",
+        "one_time_purchase": "One-time purchase",
+        "subscribe_and_save": "Subscribe & Save {{ percent }}%",
+        "purchase_options": "Purchase options",
+        "delivery_frequency": "Delivered every {{ interval }}"
       },
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
